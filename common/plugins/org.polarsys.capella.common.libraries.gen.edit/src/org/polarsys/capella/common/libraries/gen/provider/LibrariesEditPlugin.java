@@ -108,7 +108,7 @@ public final class LibrariesEditPlugin extends EMFPlugin {
 		 */
 		@Override
 		public Object getImage(String key) {
-			return FileLocator.find(this.getBundle(), new Path("icons/" + key + ".gif"), null);
+			return FileLocator.find(this.getBundle(), new Path("icons/" + key + ".gif"), null); //$NON-NLS-1$ //$NON-NLS-2$
 		}
 		//end-capella-code
 	}
