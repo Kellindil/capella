@@ -75,6 +75,8 @@ public class PropertiesSchemaConstants extends NLS {
 
   public static String PropertiesSchema_ESTRUCTURAL_FEATURE_PROPERTY__ECLASS;
 
+  public static String StringPropertyPreference_1;
+
   static {
     // initialize resource bundle
     NLS.initializeMessages(BUNDLE_NAME, PropertiesSchemaConstants.class);
