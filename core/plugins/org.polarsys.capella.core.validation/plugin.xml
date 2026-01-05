@@ -17,22 +17,22 @@
          point="org.eclipse.emf.validation.constraintProviders">
       <category
             id="capella.category"
-            name="Capella">
+            name="%category.name">
          <category
                id="quality"
-               name="Quality">
+               name="%category.name.0">
                    <![CDATA[Quality-related rules check for example that most important elements have descriptions.]]>
          </category>
          <category
                id="integrity"
-               name="Integrity">
+               name="%category.name.1">
                    <![CDATA[This category contains Capella additional rules about the model integrity. For example,
 • Verification that two distinct elements have distinct IDs
 • Verification of naming conflicts]]>
          </category>
          <category
                id="design"
-               name="Design">
+               name="%category.name.2">
                    <![CDATA[Design-related rules gather all business rules within an engineering phase (System Analysis, Logical Architecture, etc.). This set of rules does take into account what is modeled in the previous or following engineering phase.
 
 This category is divided in four sub categories:
@@ -44,114 +44,114 @@ This category is divided in four sub categories:
 The difference between Completeness and Coverage can appear subtle. Completeness is close to being inconsistent (a leaf Function really HAS to be allocated to a Component). But according to the current objectives of the system engineer, this “almost inconsistence” might not be important for the moment. Coverage is more about the risk of forgetting things is the system design, or not to be precise enough.]]>
             <category
                   id="coverage"
-                  name="Coverage">
+                  name="%category.name.3">
             </category>
             <category
                   id="well-formedness"
-                  name="Well-Formedness">
+                  name="%category.name.4">
                <category
                      id="state_machines"
-                     name="State Machines">
+                     name="%category.name.5">
                </category>
                <category
                      id="dataflows"
-                     name="Dataflows">
+                     name="%category.name.6">
                </category>
                <category
                      id="components"
-                     name="Components">
+                     name="%category.name.7">
                </category>
                <category
                      id="data"
-                     name="Data">
+                     name="%category.name.8">
                </category>
                <category
                      id="interfaces"
-                     name="Interfaces">
+                     name="%category.name.9">
                </category>
                <category
                      id="scenarios"
-                     name="Scenarios">
+                     name="%category.name.10">
                </category>
                <category
                      id="capabilities"
-                     name="Capabilities">
+                     name="%category.name.11">
                </category>
                <category
                      id="use_cases"
-                     name="Use Cases">
+                     name="%category.name.12">
                </category>
             </category>
             <category
                   id="consistency"
-                  name="Consistency">
+                  name="%category.name.13">
             </category>
             <category
                   id="completeness"
-                  name="Completeness">
+                  name="%category.name.14">
             </category>
          </category>
          <category
                id="structural_conformance_to_m2"
-               name="Structural Conformance to M2">
+               name="%category.name.15">
          </category>
          <category
                id="transition"
-               name="Transition">
+               name="%category.name.16">
             <category
                   id="consistency"
-                  name="Consistency">
+                  name="%category.name.17">
                <category
                      id="data"
-                     name="Data">
+                     name="%category.name.18">
                </category>
                <category
                      id="state_machines"
-                     name="State Machines">
+                     name="%category.name.19">
                </category>
                <category
                      id="interfaces"
-                     name="Interfaces">
+                     name="%category.name.20">
                </category>
                <category
                      id="dataflows"
-                     name="Dataflows">
+                     name="%category.name.21">
                </category>
                <category
                      id="components"
-                     name="Components">
+                     name="%category.name.22">
                </category>
                <category
                      id="scenarios"
-                     name="Scenarios">
+                     name="%category.name.23">
                </category>
                <category
                      id="capabilities"
-                     name="Capabilities">
+                     name="%category.name.24">
                </category>
             </category>
             <category
                   id="justification"
-                  name="Justification">
+                  name="%category.name.25">
                <category
                      id="physical_architecture"
-                     name="Physical Architecture">
+                     name="%category.name.26">
                </category>
                <category
                      id="logical_architecture"
-                     name="Logical Architecture">
+                     name="%category.name.27">
                </category>
                <category
                      id="epbs"
-                     name="EPBS">
+                     name="%category.name.28">
                </category>
                <category
                      id="generic"
-                     name="Generic">
+                     name="%category.name.29">
                </category>
                <category
                      id="system_analysis"
-                     name="System Analysis">
+                     name="%category.name.30">
                </category>
             </category>
          </category>
