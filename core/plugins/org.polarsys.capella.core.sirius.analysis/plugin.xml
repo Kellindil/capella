@@ -233,7 +233,7 @@
           allPopups="false"
           locationURI="toolbar:org.eclipse.sirius.diagram.tabbar">
        <toolbar
-             id="org.polarsys.capella.core.sirius.analysis.filtertoolbar"        label="label filters">
+             id="org.polarsys.capella.core.sirius.analysis.filtertoolbar"        label="%toolbar.label">
        </toolbar>
     </menuContribution>
     <menuContribution
@@ -242,7 +242,7 @@
        <command
              commandId="org.polarsys.capella.core.sirius.analysis.label1"
              icon="icons/full/obj16/ActorCapabilityInvolvement.gif"
-             label="Show [EI1, EI2]"
+             label="%command.label"
              style="toggle">
           <visibleWhen
                 checkEnabled="true">
@@ -251,7 +251,7 @@
        <command
              commandId="org.polarsys.capella.core.sirius.analysis.label2"
              icon="icons/full/obj16/ActorCapabilityInvolvement.gif"
-             label="Show EI1(param1:type1, param2:type2), EI2(param3:type3)"
+             label="%command.label.0"
              style="toggle">
           <visibleWhen
                 checkEnabled="true">
@@ -260,7 +260,7 @@
        <command
              commandId="org.polarsys.capella.core.sirius.analysis.label3"
              icon="icons/full/obj16/ActorCapabilityInvolvement.gif"
-             label="Show FE"
+             label="%command.label.1"
              style="toggle">
           <visibleWhen
                 checkEnabled="true">
@@ -269,7 +269,7 @@
        <command
              commandId="org.polarsys.capella.core.sirius.analysis.label4"
              icon="icons/full/obj16/ActorCapabilityInvolvement.gif"
-             label="Show FE [EI1, EI2]"
+             label="%command.label.2"
              style="toggle">
           <visibleWhen
                 checkEnabled="true">
@@ -278,7 +278,7 @@
        <command
              commandId="org.polarsys.capella.core.sirius.analysis.label5"
              icon="icons/full/obj16/ActorCapabilityInvolvement.gif"
-             label="Show FE (type1, type2, type3)"
+             label="%command.label.3"
              style="toggle">
           <visibleWhen
                 checkEnabled="true">
@@ -287,7 +287,7 @@
        <command
              commandId="org.polarsys.capella.core.sirius.analysis.label6"
              icon="icons/full/obj16/ActorCapabilityInvolvement.gif"
-             label="Show FE [EI1(param1:type1, param2:type2), EI2(param3:type3)]"
+             label="%command.label.4"
              style="toggle">
           <visibleWhen
                 checkEnabled="true">
@@ -296,7 +296,7 @@
        <command
              commandId="org.polarsys.capella.core.sirius.analysis.label7"
              icon="icons/full/obj16/ActorCapabilityInvolvement.gif"
-             label="Show CE [EI1, EI2]"
+             label="%command.label.5"
              style="toggle">
           <visibleWhen
                 checkEnabled="true">
@@ -305,7 +305,7 @@
        <command
              commandId="org.polarsys.capella.core.sirius.analysis.label8"
              icon="icons/full/obj16/ActorCapabilityInvolvement.gif"
-             label="Show CE (type1, type2)"
+             label="%command.label.6"
              style="toggle">
           <visibleWhen
                 checkEnabled="true">
@@ -314,7 +314,7 @@
        <command
              commandId="org.polarsys.capella.core.sirius.analysis.label9"
              icon="icons/full/obj16/ActorCapabilityInvolvement.gif"
-             label="Show CE [EI (param1:type1, param2:type2)]"
+             label="%command.label.7"
              style="toggle">
           <visibleWhen
                 checkEnabled="true">
@@ -342,19 +342,19 @@
        point="org.eclipse.ui.commands">
     <category
           id="org.polarsys.capella.core.sirius.analysis.filterLabelCategory"
-          name="Filter Label Category">
+          name="%category.name">
     </category>
     <command
           categoryId="org.polarsys.capella.core.sirius.analysis.filterLabelCategory"
           defaultHandler="org.polarsys.capella.core.sequencediag.handlers.LabelFilterForSequenceHandler"
           id="org.polarsys.capella.core.sirius.analysis.labelFilterCommand"
-          name="Label Filter">
+          name="%command.name">
     </command>
     <command
           categoryId="org.polarsys.capella.core.sirius.analysis.filterLabelCategory"
           defaultHandler="org.polarsys.capella.core.sequencediag.handlers.Label1Handler"
           id="org.polarsys.capella.core.sirius.analysis.label1"
-          name="Label1">
+          name="%command.name.0">
        <state
              class="org.polarsys.capella.core.sequencediag.datas.LabelToggleState:label1"
              id="org.eclipse.ui.commands.toggleState">
@@ -364,7 +364,7 @@
           categoryId="org.polarsys.capella.core.sirius.analysis.filterLabelCategory"
           defaultHandler="org.polarsys.capella.core.sequencediag.handlers.Label2Handler"
           id="org.polarsys.capella.core.sirius.analysis.label2"
-          name="Label2">
+          name="%command.name.1">
        <state
              class="org.polarsys.capella.core.sequencediag.datas.LabelToggleState:label2"
              id="org.eclipse.ui.commands.toggleState">
@@ -374,7 +374,7 @@
           categoryId="org.polarsys.capella.core.sirius.analysis.filterLabelCategory"
           defaultHandler="org.polarsys.capella.core.sequencediag.handlers.Label3Handler"
           id="org.polarsys.capella.core.sirius.analysis.label3"
-          name="Label3">
+          name="%command.name.2">
        <state
              class="org.polarsys.capella.core.sequencediag.datas.LabelToggleState:label3"
              id="org.eclipse.ui.commands.toggleState">
@@ -384,7 +384,7 @@
           categoryId="org.polarsys.capella.core.sirius.analysis.filterLabelCategory"
           defaultHandler="org.polarsys.capella.core.sequencediag.handlers.Label4Handler"
           id="org.polarsys.capella.core.sirius.analysis.label4"
-          name="Label4">
+          name="%command.name.3">
        <state
              class="org.polarsys.capella.core.sequencediag.datas.LabelToggleState:label4"
              id="org.eclipse.ui.commands.toggleState">
@@ -394,7 +394,7 @@
           categoryId="org.polarsys.capella.core.sirius.analysis.filterLabelCategory"
           defaultHandler="org.polarsys.capella.core.sequencediag.handlers.Label5Handler"
           id="org.polarsys.capella.core.sirius.analysis.label5"
-          name="Label5">
+          name="%command.name.4">
        <state
              class="org.polarsys.capella.core.sequencediag.datas.LabelToggleState:label5"
              id="org.eclipse.ui.commands.toggleState">
@@ -404,7 +404,7 @@
           categoryId="org.polarsys.capella.core.sirius.analysis.filterLabelCategory"
           defaultHandler="org.polarsys.capella.core.sequencediag.handlers.Label6Handler"
           id="org.polarsys.capella.core.sirius.analysis.label6"
-          name="Label6">
+          name="%command.name.5">
        <state
              class="org.polarsys.capella.core.sequencediag.datas.LabelToggleState:label6"
              id="org.eclipse.ui.commands.toggleState">
@@ -414,7 +414,7 @@
           categoryId="org.polarsys.capella.core.sirius.analysis.filterLabelCategory"
           defaultHandler="org.polarsys.capella.core.sequencediag.handlers.Label7Handler"
           id="org.polarsys.capella.core.sirius.analysis.label7"
-          name="Label7">
+          name="%command.name.6">
        <state
              class="org.polarsys.capella.core.sequencediag.datas.LabelToggleState:label7"
              id="org.eclipse.ui.commands.toggleState">
@@ -424,7 +424,7 @@
           categoryId="org.polarsys.capella.core.sirius.analysis.filterLabelCategory"
           defaultHandler="org.polarsys.capella.core.sequencediag.handlers.Label8Handler"
           id="org.polarsys.capella.core.sirius.analysis.label8"
-          name="Label8">
+          name="%command.name.7">
        <state
              class="org.polarsys.capella.core.sequencediag.datas.LabelToggleState:label8"
              id="org.eclipse.ui.commands.toggleState">
@@ -434,7 +434,7 @@
           categoryId="org.polarsys.capella.core.sirius.analysis.filterLabelCategory"
           defaultHandler="org.polarsys.capella.core.sequencediag.handlers.Label9Handler"
           id="org.polarsys.capella.core.sirius.analysis.label9"
-          name="Label9">
+          name="%command.name.8">
        <state
              class="org.polarsys.capella.core.sequencediag.datas.LabelToggleState:label9"
              id="org.eclipse.ui.commands.toggleState">
@@ -443,12 +443,12 @@
     <command
           defaultHandler="org.polarsys.capella.core.sirius.analysis.accelerators.AcceleratorOnSequenceLinkHandler"
           id="org.polarsys.capella.core.platform.sirius.ui.actions.accelerator.AcceleratorFromSequenceLinkToFCIL"
-          name="Create new Exchange">
+          name="%command.name.9">
     </command>
     <command
           defaultHandler="org.polarsys.capella.core.sirius.analysis.accelerators.AcceleratorOnFCILinkHandler"
           id="org.polarsys.capella.core.platform.sirius.ui.actions.accelerator.AcceleratorFromFCILToSequenceLink"
-          name="Create new Sequence Link">
+          name="%command.name.10">
     </command>
  </extension>
  <extension
