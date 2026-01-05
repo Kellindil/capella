@@ -139,7 +139,7 @@ public class EObjectLabelProviderHelper {
    */
   public static String getMetaclassLabel(EClass eClass, AdapterFactoryEditingDomain editingDomain) {
     Bundle bundle = getGenBundle(eClass, editingDomain);
-    String label = "";
+    String label = ""; //$NON-NLS-1$
     if (bundle != null) {
       ResourceBundle resourceBundle = Platform.getResourceBundle(bundle);
       if (resourceBundle != null) {
@@ -162,7 +162,7 @@ public class EObjectLabelProviderHelper {
     if (bundle != null) {
       ResourceBundle resourceBundle = Platform.getResourceBundle(bundle);
       if (resourceBundle != null) {
-        URL imageURL = FileLocator.find(bundle, new Path("icons/full/obj16/" + eClass.getName() + ".gif"), null);
+        URL imageURL = FileLocator.find(bundle, new Path("icons/full/obj16/" + eClass.getName() + ".gif"), null); //$NON-NLS-1$ //$NON-NLS-2$
         imageDescriptor = ExtendedImageRegistry.getInstance().getImageDescriptor(imageURL);
       }
     }
