@@ -346,7 +346,7 @@
                severity="WARNING"
                statusCode="1">
             <message>
-               {0}
+               %constraint.message.15
             </message>
             <description>
                %constraint.description.15
@@ -368,7 +368,7 @@
                severity="WARNING"
                statusCode="1">
             <message>
-               {0}
+               %constraint.message.16
             </message>
             <target
                   class="SystemComponent">
@@ -387,7 +387,7 @@
                severity="ERROR"
                statusCode="1">
             <message>
-               {0}.
+               %constraint.message.17
             </message>
             <description>
                %constraint.description.17
