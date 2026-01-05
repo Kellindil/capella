@@ -174,7 +174,7 @@ public class BrowseRenderer extends TextRenderer {
         right.addAll(current);
         right.remove(null);
 
-        TransferTreeListDialog dialog = new TransferTreeListDialog(shell, Messages.BrowseRenderer_4, "Select elements.");//$NON-NLS-2$
+        TransferTreeListDialog dialog = new TransferTreeListDialog(shell, Messages.BrowseRenderer_4, Messages.BrowseRenderer_0);//$NON-NLS-2$
         dialog.setLeftInput(new ArrayList<EObject>(left), null);
         dialog.setRightInput(new ArrayList<EObject>(right), null);
         if (dialog.open() == Window.OK) {
