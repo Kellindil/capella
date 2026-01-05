@@ -96,7 +96,7 @@
                   severity="WARNING"
                   statusCode="1">
                <message>
-                  {0}
+                  %constraint.message.2
                </message>
                <description>
                   %constraint.description.2
