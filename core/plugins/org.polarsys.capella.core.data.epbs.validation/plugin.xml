@@ -50,7 +50,7 @@
                   severity="ERROR"
                   statusCode="1">
                <message>
-                  {0}.
+                  %constraint.message.0
                </message>
                <description>
                   %constraint.description.0
