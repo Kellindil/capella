@@ -42,7 +42,7 @@ public class PropertiesLoader {
     extensions = new ArrayList<IConfigurationElement>();
     extensions.addAll(Arrays.asList(Platform.getExtensionRegistry().getConfigurationElementsFor(PropertiesSchemaConstants.PropertiesSchema_ID)));
     for (IConfigurationElement element : extensions) {
-      System.out.println("flexibility.properties: migration is required for " + element.getNamespaceIdentifier());
+      System.out.println("flexibility.properties: migration is required for " + element.getNamespaceIdentifier()); //$NON-NLS-1$
     }
     extensions.addAll(Arrays.asList(Platform.getExtensionRegistry().getConfigurationElementsFor(PropertiesSchemaConstants.PropertiesSchema_SCHEMA_ID)));
 
@@ -162,7 +162,7 @@ public class PropertiesLoader {
           if (parentId == null) {
             parentId = extension.getAttribute(PropertiesSchemaConstants.PropertiesSchema_GROUP__PARENT_ID);
             if (parentId != null) {
-              System.out.println("flexibility.properties: migration is required on " + groupId + "> 'parendId' attribute instead of 'parent'" + parentId);
+              System.out.println("flexibility.properties: migration is required on " + groupId + "> 'parendId' attribute instead of 'parent'" + parentId); //$NON-NLS-1$ //$NON-NLS-2$
             }
           }
 
@@ -179,7 +179,7 @@ public class PropertiesLoader {
           if (group_id == null) {
             group_id = extension.getAttribute(PropertiesSchemaConstants.PropertiesSchema_PROPERTY__GROUP_ID);
             if (group_id != null) {
-              System.out.println("flexibility.properties: migration is required on " + propertyId + "> 'group_id' attribute instead of 'group'" + group_id);
+              System.out.println("flexibility.properties: migration is required on " + propertyId + "> 'group_id' attribute instead of 'group'" + group_id); //$NON-NLS-1$ //$NON-NLS-2$
             }
           }
 
