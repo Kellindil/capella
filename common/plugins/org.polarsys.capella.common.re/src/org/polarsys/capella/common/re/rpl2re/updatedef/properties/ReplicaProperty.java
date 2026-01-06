@@ -38,7 +38,7 @@ public class ReplicaProperty extends AbstractProperty implements IEditableProper
     try {
 
       IContext context = (IContext) propertyContext.getSource();
-      CatalogElement replica = (CatalogElement) context.get("RPL");
+      CatalogElement replica = (CatalogElement) context.get("RPL"); //$NON-NLS-1$
 
       if (replica == null) {
 
@@ -67,7 +67,7 @@ public class ReplicaProperty extends AbstractProperty implements IEditableProper
           }
         }
 
-        context.put("RPL", replica);
+        context.put("RPL", replica); //$NON-NLS-1$
       }
 
       return replica;
@@ -91,7 +91,7 @@ public class ReplicaProperty extends AbstractProperty implements IEditableProper
   @Override
   public Object toType(Object value, IPropertyContext propertyContext) {
     IContext context = (IContext) propertyContext.getSource();
-    CatalogElement element = (CatalogElement) context.get("RPL");
+    CatalogElement element = (CatalogElement) context.get("RPL"); //$NON-NLS-1$
     if (value instanceof String) {
       element.setName((String) value);
       return element;
@@ -113,7 +113,7 @@ public class ReplicaProperty extends AbstractProperty implements IEditableProper
   public IStatus validate(Object newValue, IPropertyContext context) {
     
     if (newValue == null) {
-      return new Status(Status.ERROR, "unknown", Status.ERROR, Messages.Update_REC_from_RPL_only_one, null);
+      return new Status(Status.ERROR, Messages.ReplicaProperty_3, Status.ERROR, Messages.Update_REC_from_RPL_only_one, null);
     }
     
     return Status.OK_STATUS;

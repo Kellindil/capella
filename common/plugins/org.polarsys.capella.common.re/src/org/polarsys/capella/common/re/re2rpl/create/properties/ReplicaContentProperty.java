@@ -41,7 +41,7 @@ import com.google.common.collect.LinkedHashMultimap;
  */
 public class ReplicaContentProperty extends AbstractProperty implements ICompoundProperty, IModifiedProperty, IEditableProperty {
 
-  private static String LINKS = "TEMPORARYLINKS";
+  private static String LINKS = "TEMPORARYLINKS"; //$NON-NLS-1$
 
   /**
    * {@inheritDoc}
@@ -153,7 +153,7 @@ public class ReplicaContentProperty extends AbstractProperty implements ICompoun
     }
 
     if (!linksInvalid.isEmpty()) {
-      return new Status(IStatus.ERROR, IReConstants.PLUGIN_ID, "Some elements need to be stored in the model");
+      return new Status(IStatus.ERROR, IReConstants.PLUGIN_ID, Messages.ReplicaContentProperty_1);
     }
     return Status.OK_STATUS;
   }

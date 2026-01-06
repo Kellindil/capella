@@ -20,6 +20,7 @@ import org.eclipse.osgi.util.NLS;
 public class Messages extends NLS {
   private static final String BUNDLE_NAME = "org.polarsys.capella.common.re.constants.messages"; //$NON-NLS-1$
   public static String ReLauncher_Title;
+  public static String ReplicaProperty_3;
   public static String Update_REC_from_RPL_only_one;
   static {
     // initialize resource bundle
