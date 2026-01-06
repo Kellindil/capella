@@ -22,12 +22,12 @@ package org.polarsys.capella.common.tools.report.util;
  */
 @SuppressWarnings("nls")
 public interface IReportManagerDefaultComponents {
-  public static final String DIAGRAM = "Diagrams Management";
-  public static final String VALIDATION = "Model Validation";
-  public static final String IMPACT = "Impact Analysis";
-  public static final String REFINEMENT = "Refinement";
-  public static final String UI = "User Interface";
-  public static final String MODEL = "Model Management";
-  public static final String DEFAULT = "Default";
-  public static final String BRIDGE = "Bridge";
+  public static final String DIAGRAM = Messages.IReportManagerDefaultComponents_0;
+  public static final String VALIDATION = Messages.IReportManagerDefaultComponents_1;
+  public static final String IMPACT = Messages.IReportManagerDefaultComponents_2;
+  public static final String REFINEMENT = Messages.IReportManagerDefaultComponents_3;
+  public static final String UI = Messages.IReportManagerDefaultComponents_4;
+  public static final String MODEL = Messages.IReportManagerDefaultComponents_5;
+  public static final String DEFAULT = Messages.IReportManagerDefaultComponents_6;
+  public static final String BRIDGE = Messages.IReportManagerDefaultComponents_7;
 }
