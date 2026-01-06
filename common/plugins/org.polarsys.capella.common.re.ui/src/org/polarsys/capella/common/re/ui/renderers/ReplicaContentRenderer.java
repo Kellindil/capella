@@ -75,7 +75,7 @@ public class ReplicaContentRenderer extends EditListRenderer implements Property
     // We allow renaming of elements in this dialog
     final TreeViewer viewer = getViewer().getClientViewer();
 
-    viewer.setColumnProperties(new String[] { "name" });
+    viewer.setColumnProperties(new String[] { "name" }); //$NON-NLS-1$
     viewer.setCellModifier(new NameCellModifier(viewer, context));
     viewer.setCellEditors(new CellEditor[] { new TextCellEditor(viewer.getTree()) });
 
@@ -166,12 +166,12 @@ public class ReplicaContentRenderer extends EditListRenderer implements Property
    */
   @Override
   protected String getToolbarLocation() {
-    return "toolbar:org.polarsys.capella.common.re.createReplica.content";
+    return "toolbar:org.polarsys.capella.common.re.createReplica.content"; //$NON-NLS-1$
   }
 
   @Override
   protected String getPopupLocation() {
-    return "popup:org.polarsys.capella.common.re.createReplica.content";
+    return "popup:org.polarsys.capella.common.re.createReplica.content"; //$NON-NLS-1$
   }
 
   /**
@@ -255,12 +255,12 @@ public class ReplicaContentRenderer extends EditListRenderer implements Property
       Object replica = context.getPropertyContext().getCurrentValue(property);
 
       if (!replica.equals(link.getSource())) {
-        return new Status(IStatus.OK, "  ", "custom location");
+        return new Status(IStatus.OK, "  ", Messages.ReplicaContentRenderer_4); //$NON-NLS-1$
       }
 
       EObject location = LocationHandlerHelper.getInstance(ctx).getCurrentLocation((CatalogElementLink) element, ctx);
       if (location != null) {
-        return new Status(IStatus.INFO, "  ", "custom location");
+        return new Status(IStatus.INFO, "  ", Messages.ReplicaContentRenderer_6); //$NON-NLS-1$
       }
       location = LocationHandlerHelper.getInstance(ctx).getLocation(link, link.getOrigin(), ctx);
       if (location == null) {
@@ -275,10 +275,10 @@ public class ReplicaContentRenderer extends EditListRenderer implements Property
         }
 
         if (defaultLocation == null) {
-          return new Status(IStatus.WARNING, "  ", "no location");
+          return new Status(IStatus.WARNING, "  ", Messages.ReplicaContentRenderer_8); //$NON-NLS-1$
         }
 
-        return new Status(IStatus.INFO, "  ", "default location");
+        return new Status(IStatus.INFO, "  ", Messages.ReplicaContentRenderer_10); //$NON-NLS-1$
       }
     }
     return Status.OK_STATUS;
