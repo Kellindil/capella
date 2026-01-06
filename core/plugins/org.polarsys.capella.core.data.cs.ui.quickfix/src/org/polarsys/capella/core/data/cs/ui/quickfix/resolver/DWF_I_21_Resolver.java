@@ -36,7 +36,7 @@ public class DWF_I_21_Resolver extends AbstractCapellaMarkerResolution{
   boolean isSender;
   
   public DWF_I_21_Resolver(CommunicationLinkProtocol protocol, boolean isSender) {
-    setLabel(NLS.bind("Set {0} protocol to {1}", (isSender ? "transmission":"acquisition"), protocol));
+    setLabel(NLS.bind(Messages.DWF_I_21_Resolver_0, (isSender ? Messages.DWF_I_21_Resolver_1:Messages.DWF_I_21_Resolver_2), protocol));
     this.protocol = protocol;
     this.isSender = isSender;
   }
@@ -105,7 +105,7 @@ public class DWF_I_21_Resolver extends AbstractCapellaMarkerResolution{
 
   @Override
   protected String[] getResolvableRuleIds() {
-    return new String[] {"DWF_I_21"};
+    return new String[] {"DWF_I_21"}; //$NON-NLS-1$
   }
 
   @Override
