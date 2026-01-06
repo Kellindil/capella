@@ -25,6 +25,7 @@ import org.apache.log4j.Logger;
 import org.eclipse.core.resources.IFile;
 import org.eclipse.core.runtime.CoreException;
 import org.eclipse.core.runtime.IProgressMonitor;
+import org.eclipse.osgi.util.NLS;
 import org.polarsys.capella.common.bundle.FeatureHelper;
 import org.polarsys.capella.common.tools.report.config.registry.ReportManagerRegistry;
 import org.polarsys.capella.common.tools.report.util.IReportManagerDefaultComponents;
@@ -68,13 +69,7 @@ public class VersionChecker implements IPrecondition<IFile> {
 				if (modelVersion != null && !modelVersion.isEmpty()){
 					if (!modelVersion.startsWith(capellaVersion.substring(0, 3))){
 						StringBuffer _msg = new StringBuffer();
-						_msg.append(iFile.getName()).
-							append(": model version is: ").
-							append(modelVersion).
-							append(". It needs to be migrated to ").
-							append("Capella ").
-							append(capellaVersion).
-							append(".\n");
+						_msg.append(NLS.bind(Messages.versionCkeckerString, new Object[] {modelVersion, capellaVersion}));
 						result.add(_msg);
 					}
 				}
