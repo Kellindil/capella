@@ -49,8 +49,8 @@ public class VersionChecker implements IPrecondition<IFile> {
 			String projectName = param.getProject().getName();
 			SAXModelsElementsParser modelsEltParser = SAXModelsElementsParser.newInstance(projectName);
 			SAXParser saxParser = parserFactory.newSAXParser();
-			saxParser.setProperty(XMLConstants.ACCESS_EXTERNAL_DTD, "");
-			saxParser.setProperty(XMLConstants.ACCESS_EXTERNAL_SCHEMA, "");
+			saxParser.setProperty(XMLConstants.ACCESS_EXTERNAL_DTD, ""); //$NON-NLS-1$
+			saxParser.setProperty(XMLConstants.ACCESS_EXTERNAL_SCHEMA, ""); //$NON-NLS-1$
 			XMLReader xmlReader = saxParser.getXMLReader();
 			xmlReader.setContentHandler(modelsEltParser);
 			is = new InputSource();
@@ -96,7 +96,7 @@ public class VersionChecker implements IPrecondition<IFile> {
 	}
 
 	private String assembleMessage(Collection<StringBuffer> result) {
-		String _msg = "";
+		String _msg = ""; //$NON-NLS-1$
 		for (StringBuffer m : result) {
 			_msg += m.toString();
 		}
