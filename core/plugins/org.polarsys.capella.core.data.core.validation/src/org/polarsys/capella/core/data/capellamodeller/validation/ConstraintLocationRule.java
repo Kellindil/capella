@@ -50,7 +50,7 @@ public class ConstraintLocationRule extends AbstractValidationRule {
         if (constraint.eContainer() instanceof PartDeploymentLink && 
             (constrainedElements != null && !constrainedElements.isEmpty()) &&
             !constrainedElements.get(0).equals(constraint.eContainer())) {
-          return ctx.createFailureStatus(CapellaElementExt.getValidationRuleMessagePrefix(constraint), "first value of ConstrainedElements");         
+          return ctx.createFailureStatus(CapellaElementExt.getValidationRuleMessagePrefix(constraint), Messages.ConstraintLocationRule_0);         
         }
       } else {
         //monopart mode
@@ -64,7 +64,7 @@ public class ConstraintLocationRule extends AbstractValidationRule {
             .collect(Collectors.toList()).isEmpty();
         if ((constraint.eContainer() instanceof Part || constraint.eContainer() instanceof PartDeploymentLink) &&
             !isConstrainingPartOrPDL) {
-          return ctx.createFailureStatus(CapellaElementExt.getValidationRuleMessagePrefix(constraint), "Component");
+          return ctx.createFailureStatus(CapellaElementExt.getValidationRuleMessagePrefix(constraint), Messages.ConstraintLocationRule_1);
         }
       }
     }
