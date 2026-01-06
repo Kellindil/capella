@@ -29,7 +29,7 @@ public class SemanticBrowserDataValidator extends MADataValidator {
     boolean isValid = (newValue != null);
 
     if (!isValid) {
-      throw new ValidationFailedException("The new value " + newValue + " is invalid!");
+      throw new ValidationFailedException(Messages.SemanticBrowserDataValidator_0 + newValue + Messages.SemanticBrowserDataValidator_1);
     }
     return isValid;
   }

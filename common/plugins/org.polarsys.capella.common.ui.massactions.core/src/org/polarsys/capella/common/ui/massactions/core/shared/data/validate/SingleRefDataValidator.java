@@ -30,7 +30,7 @@ public class SingleRefDataValidator extends MADataValidator {
     boolean isValid = (newValue instanceof EObject);
 
     if (!isValid) {
-      throw new ValidationFailedException("The new value " + newValue + " is invalid!");
+      throw new ValidationFailedException(Messages.SingleRefDataValidator_0 + newValue + Messages.SingleRefDataValidator_1);
     }
     return isValid;
   }

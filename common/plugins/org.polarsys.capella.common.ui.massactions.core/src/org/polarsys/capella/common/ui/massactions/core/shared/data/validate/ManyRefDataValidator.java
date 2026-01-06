@@ -30,7 +30,7 @@ public class ManyRefDataValidator extends MADataValidator {
     boolean isValid = (newValue instanceof ManyRefTransitionalValue);
 
     if (!isValid) {
-      throw new ValidationFailedException("The new value " + newValue + " is invalid!");
+      throw new ValidationFailedException(Messages.ManyRefDataValidator_0 + newValue + Messages.ManyRefDataValidator_1);
     }
     return isValid;
   }
