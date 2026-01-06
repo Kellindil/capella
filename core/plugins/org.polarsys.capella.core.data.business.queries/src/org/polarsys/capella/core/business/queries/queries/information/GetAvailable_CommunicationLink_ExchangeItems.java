@@ -31,7 +31,7 @@ public class GetAvailable_CommunicationLink_ExchangeItems extends AbstractQuery 
 	}
 
 	public List<CapellaElement> getAvailableElements(CapellaElement element) {
-		return QueryInterpretor.executeQuery("GetAvailable_CommunicationLink_ExchangeItem__Lib", element, new QueryContext());
+		return QueryInterpretor.executeQuery("GetAvailable_CommunicationLink_ExchangeItem__Lib", element, new QueryContext()); //$NON-NLS-1$
 	}
 
 }
