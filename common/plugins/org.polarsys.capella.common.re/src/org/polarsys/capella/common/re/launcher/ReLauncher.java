@@ -30,7 +30,7 @@ public abstract class ReLauncher extends DefaultLauncher {
     super.initializeParameters();
 
     addSharedParameter(new GenericParameter<IRulesHandler>(org.polarsys.capella.core.transition.common.activities.InitializeTransitionActivity.PARAMETER_RULE_HANDLER,
-        getTransposer().getRulesHandler(), "Rule handler"));
+        getTransposer().getRulesHandler(), Messages.ReLauncher_0));
 
     addSharedParameter(new GenericParameter<String>(ITransitionConstants.OPTIONS_SCOPE, getScope(), "Transposer Rule handler")); //$NON-NLS-1$;
 
@@ -48,7 +48,7 @@ public abstract class ReLauncher extends DefaultLauncher {
   
   @Override
   protected String getPurpose() {
-    return "org.polarsys.capella.common.re";
+    return "org.polarsys.capella.common.re"; //$NON-NLS-1$
   }
 
   @Override
@@ -69,6 +69,6 @@ public abstract class ReLauncher extends DefaultLauncher {
 
   @Override
   protected String getReportComponent() {
-    return "REC-RPL";
+    return "REC-RPL"; //$NON-NLS-1$
   }
 }
