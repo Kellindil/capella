@@ -37,8 +37,8 @@ public class SAXModelsElementsParser extends DefaultHandler {
 	
 	private static final Logger logger = ReportManagerRegistry.getInstance().subscribe(IReportManagerDefaultComponents.MODEL);
 	
-	private static final String HREF_ATTR = "href"; //$NON-NLS-1 //$NON-NLS-1$
-	private static final String MODELS_TAG = "models"; //$NON-NLS-1 //$NON-NLS-1$
+	private static final String HREF_ATTR = "href"; //$NON-NLS-1$
+	private static final String MODELS_TAG = "models"; //$NON-NLS-1$
 	
 	Collection<IFile> capellaModellers;
 	public final IWorkspaceRoot wsRoot = ResourcesPlugin.getWorkspace().getRoot();
