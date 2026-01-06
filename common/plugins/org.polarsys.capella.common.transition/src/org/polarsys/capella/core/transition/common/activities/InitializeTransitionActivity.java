@@ -295,7 +295,7 @@ public abstract class InitializeTransitionActivity extends AbstractActivity impl
       }
 
     } else {
-      return new Status(IStatus.ERROR, Messages.Activity_Transition, "No input selection");
+      return new Status(IStatus.ERROR, Messages.Activity_Transition, Messages.InitializeTransitionActivity_1);
     }
 
     return Status.OK_STATUS;

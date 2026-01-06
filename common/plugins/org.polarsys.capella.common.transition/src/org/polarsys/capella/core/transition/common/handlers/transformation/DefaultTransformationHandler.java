@@ -67,7 +67,7 @@ public class DefaultTransformationHandler implements ITransformationHandler {
       return Status.OK_STATUS;
     }
 
-    return new Status(IStatus.WARNING, Messages.Activity_Transformation, NLS.bind("Element ''{0}'' will not be transitioned.",
+    return new Status(IStatus.WARNING, Messages.Activity_Transformation, NLS.bind(Messages.DefaultTransformationHandler_0,
         LogHelper.getInstance().getText(source)));
   }
 
@@ -133,12 +133,12 @@ public class DefaultTransformationHandler implements ITransformationHandler {
     if ((sourceElement != null)) {
       if (!(TransformationHandlerHelper.getInstance(context).isOrWillBeTransformed(sourceElement, context).isOK())) {
         result =
-            new Status(IStatus.WARNING, Messages.Activity_Transformation, NLS.bind("{1} ''{0}'' is linked to an element which is not transitioned.", LogHelper
+            new Status(IStatus.WARNING, Messages.Activity_Transformation, NLS.bind(Messages.DefaultTransformationHandler_1, LogHelper
                 .getInstance().getText(source), LogHelper.getInstance().getText(source.eClass())));
       }
     } else {
       result =
-          new Status(IStatus.WARNING, Messages.Activity_Transformation, NLS.bind("{1} ''{0}'' is linked to an null element.",
+          new Status(IStatus.WARNING, Messages.Activity_Transformation, NLS.bind(Messages.DefaultTransformationHandler_2,
               LogHelper.getInstance().getText(source), LogHelper.getInstance().getText(source.eClass())));
     }
 
@@ -152,12 +152,12 @@ public class DefaultTransformationHandler implements ITransformationHandler {
       if (!(TransformationHandlerHelper.getInstance(context).isOrWillBeTransformed(sourceElement, context).isOK() && TransformationHandlerHelper
           .getInstance(context).isOrWillBeTransformed(targetElement, context).isOK())) {
         result =
-            new Status(IStatus.WARNING, Messages.Activity_Transformation, NLS.bind("{1} ''{0}'' is linked to an element which is not transitioned.", LogHelper
+            new Status(IStatus.WARNING, Messages.Activity_Transformation, NLS.bind(Messages.DefaultTransformationHandler_3, LogHelper
                 .getInstance().getText(source), LogHelper.getInstance().getText(source.eClass())));
       }
     } else {
       result =
-          new Status(IStatus.WARNING, Messages.Activity_Transformation, NLS.bind("{1} ''{0}'' is linked to an null element.",
+          new Status(IStatus.WARNING, Messages.Activity_Transformation, NLS.bind(Messages.DefaultTransformationHandler_4,
               LogHelper.getInstance().getText(source), LogHelper.getInstance().getText(source.eClass())));
     }
 

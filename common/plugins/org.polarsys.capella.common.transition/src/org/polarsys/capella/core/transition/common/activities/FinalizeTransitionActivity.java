@@ -73,13 +73,13 @@ public class FinalizeTransitionActivity extends AbstractActivity implements ITra
         if (session.isOpen()) {
           session.save(new NullProgressMonitor());
           LogHelper.getInstance().info(
-              NLS.bind("Session for ''{0}'' has been saved automatically.", targetResource.getURI()),
+              NLS.bind(Messages.FinalizeTransitionActivity_0, targetResource.getURI()),
               Messages.Activity_Transition);
         }
       } else {
         try {
           LogHelper.getInstance().info(
-              NLS.bind("Resource ''{0}'' has been saved automatically.", targetResource.getURI()),
+              NLS.bind(Messages.FinalizeTransitionActivity_1, targetResource.getURI()),
               Messages.Activity_Transition);
           targetResource.save(Collections.EMPTY_MAP);
         } catch (IOException exception) {
@@ -91,7 +91,7 @@ public class FinalizeTransitionActivity extends AbstractActivity implements ITra
 
     GenericParameter<?> parameter = activityParams.getParameter(IOptionsConstants.IS_DRY_RUN);
     if (parameter == null || !Boolean.valueOf(parameter.getValue().toString())) {
-      LogHelper.getInstance().info("Operation has been successful.", Messages.Activity_Transition);
+      LogHelper.getInstance().info(Messages.FinalizeTransitionActivity_2, Messages.Activity_Transition);
     }
 
     return Status.OK_STATUS;

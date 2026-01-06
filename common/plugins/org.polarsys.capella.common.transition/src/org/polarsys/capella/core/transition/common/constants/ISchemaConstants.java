@@ -18,34 +18,34 @@ package org.polarsys.capella.core.transition.common.constants;
  */
 public class ISchemaConstants {
 
-  public static final String EXTENSION_ID = "org.polarsys.capella.core.transition.handlers";
+  public static final String EXTENSION_ID = "org.polarsys.capella.core.transition.handlers"; //$NON-NLS-1$
 
-  public static final String ID = "id";
-  public static final String CLASS = "class";
-  protected static final String ALL = "all";
+  public static final String ID = Messages.ISchemaConstants_1;
+  public static final String CLASS = Messages.ISchemaConstants_2;
+  protected static final String ALL = Messages.ISchemaConstants_3;
 
-  public static final String HANDLERS = "handlers";
-  public static final String HANDLERS__PURPOSE = "purpose";
-  public static final String HANDLERS__MAPPING = "mapping";
+  public static final String HANDLERS = Messages.ISchemaConstants_4;
+  public static final String HANDLERS__PURPOSE = Messages.ISchemaConstants_5;
+  public static final String HANDLERS__MAPPING = Messages.ISchemaConstants_6;
   public static final String HANDLERS__PURPOSE__ALL_PURPOSES = ALL;
   public static final String HANDLERS__MAPPING__ALL_MAPPINGS = ALL;
 
-  public static final String DOMAIN = "domain";
+  public static final String DOMAIN = Messages.ISchemaConstants_7;
 
-  public static final String SCOPE_RETRIEVER = "scopeRetriever";
+  public static final String SCOPE_RETRIEVER = Messages.ISchemaConstants_8;
   public static final String SCOPE_RETRIEVER__ID = ID;
   public static final String SCOPE_RETRIEVER__CLASS = CLASS;
 
-  public static final String SCOPE_FILTER = "scopeFilter";
+  public static final String SCOPE_FILTER = Messages.ISchemaConstants_9;
   public static final String SCOPE_FILTER__ID = ID;
   public static final String SCOPE_FILTER__CLASS = CLASS;
 
-  public static final String SOURCE_TRACEABILITY_CONFIGURATION = "sourceTraceabilityConfiguration";
-  public static final String TARGET_TRACEABILITY_CONFIGURATION = "targetTraceabilityConfiguration";
-  public static final String TRANSFORMATION_TRACEABILITY_CONFIGURATION = "transformationTraceabilityConfiguration";
+  public static final String SOURCE_TRACEABILITY_CONFIGURATION = Messages.ISchemaConstants_10;
+  public static final String TARGET_TRACEABILITY_CONFIGURATION = Messages.ISchemaConstants_11;
+  public static final String TRANSFORMATION_TRACEABILITY_CONFIGURATION = Messages.ISchemaConstants_12;
 
-  public static final String ACTIVITY_EXTENDER = "activityExtender";
-  public static final String ACTIVITY_EXTENDER__ACTIVITY_IDENTIFIER = "activityIdentifier";
+  public static final String ACTIVITY_EXTENDER = Messages.ISchemaConstants_13;
+  public static final String ACTIVITY_EXTENDER__ACTIVITY_IDENTIFIER = Messages.ISchemaConstants_14;
   public static final String ACTIVITY_EXTENDER__ACTIVITY_IDENTIFIER__ALL_ACTIVITIES = ALL;
 
 }

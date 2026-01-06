@@ -206,7 +206,7 @@ public abstract class AbstractActivity implements IActivity {
       for (String string : strings) {
         if (!context.exists(string) || (context.get(string) == null)) {
           return new Status(IStatus.ERROR, Messages.Activity_Transition,
-              NLS.bind("Parameter ''{0}'' must be defined", string));
+              NLS.bind(Messages.AbstractActivity_0, string));
         }
       }
     }

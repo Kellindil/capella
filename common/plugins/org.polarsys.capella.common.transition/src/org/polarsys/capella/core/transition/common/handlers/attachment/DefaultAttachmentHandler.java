@@ -68,18 +68,18 @@ public class DefaultAttachmentHandler implements IAttachmentHandler {
         LogHelper.getInstance()
             .debug(
                 NLS.bind(
-                    "Element ''{0}'' attached to ''{1}'' [{2}].",
+                    Messages.DefaultAttachmentHandler_0,
                     new Object[] { LogHelper.getInstance().getText(targetAttached), LogHelper.getInstance().getText(targetAttaching),
                                   targetFeature.getName() }), Messages.Activity_Transformation);
 
         return true;
       }
       LogHelper.getInstance().debug(
-          NLS.bind("Feature ''{0}'' of ''{1}'' is not changeable or derived.", targetFeature.getName(), ((EClass) (targetFeature.eContainer())).getName()),
+          NLS.bind(Messages.DefaultAttachmentHandler_1, targetFeature.getName(), ((EClass) (targetFeature.eContainer())).getName()),
           Messages.Activity_Transformation);
     } else {
       LogHelper.getInstance().warn(
-          NLS.bind("Feature ''{0}'' of ''{1}'' is not applicable on  ''{1}''.",
+          NLS.bind(Messages.DefaultAttachmentHandler_2,
               new Object[] { targetFeature.getName(), ((EClass) (targetFeature.eContainer())).getName(), targetAttaching.eClass().getName() }),
           Messages.Activity_Transformation);
     }
@@ -138,7 +138,7 @@ public class DefaultAttachmentHandler implements IAttachmentHandler {
           if (shouldUpdateAttribute(sourceElement, targetElement, feature, valueSource, valueTarget, context)) {
             if (valueTarget != null) {
               LogHelper.getInstance().debug(
-                  NLS.bind("Update Attribute ''{0}'' of ''{1}''.",
+                  NLS.bind(Messages.DefaultAttachmentHandler_3,
                       new Object[] { attribute.getName(), LogHelper.getInstance().getText(targetElement), LogHelper.getInstance().getText(valueTarget),
                                     LogHelper.getInstance().getText(valueSource) }), targetElement, Messages.Activity_Transformation);
             }
@@ -155,7 +155,7 @@ public class DefaultAttachmentHandler implements IAttachmentHandler {
           }
         } else {
           LogHelper.getInstance().debug(
-              NLS.bind("Attribute ''{0}'' of ''{1}'' is not changeable or derived.",
+              NLS.bind(Messages.DefaultAttachmentHandler_4,
                   new Object[] { attribute.getName(), LogHelper.getInstance().getText(targetElement) }), targetElement, Messages.Activity_Transformation);
         }
       }

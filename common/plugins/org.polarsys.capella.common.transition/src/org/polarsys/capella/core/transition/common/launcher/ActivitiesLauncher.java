@@ -119,7 +119,7 @@ public class ActivitiesLauncher {
    * 
    */
   protected void processCancel() {
-    LogHelper.getInstance().info("Operation has been cancelled", Messages.Activity_Transition);
+    LogHelper.getInstance().info(Messages.ActivitiesLauncher_0, Messages.Activity_Transition);
   }
 
   protected ExtendedCadenceLauncher createCadenceLauncher() {

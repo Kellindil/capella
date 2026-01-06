@@ -50,7 +50,7 @@ public class UsageMonitoringLogger {
    */
   private void setUsagePath() {
     String usagePathProperty = System.getProperty(UsageMonitoringLogger.USAGE_PATH);
-    if (null == usagePathProperty || "".equals(usagePathProperty)) {
+    if (null == usagePathProperty || Messages.UsageMonitoringLogger_3.equals(usagePathProperty)) {
       System.setProperty(UsageMonitoringLogger.USAGE_PATH,
           ResourcesPlugin.getWorkspace().getRoot().getLocation().toOSString());
     } else if (usagePathProperty.matches(pathRegex)) {

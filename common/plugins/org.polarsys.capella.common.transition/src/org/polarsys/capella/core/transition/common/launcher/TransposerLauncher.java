@@ -169,7 +169,7 @@ public class TransposerLauncher extends ActivitiesLauncher {
 
   protected void initializeParameters() {
     addSharedParameter(new GenericParameter<IContext>(ITransposerWorkflow.TRANSPOSER_CONTEXT,
-        transposer.getContext(), "Context used during rules execution"));
+        transposer.getContext(), Messages.TransposerLauncher_0));
   }
 
   public class DispatcherArrayIterator implements Iterator<String> {
