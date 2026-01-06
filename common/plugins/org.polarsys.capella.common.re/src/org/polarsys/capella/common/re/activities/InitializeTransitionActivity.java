@@ -259,7 +259,7 @@ public class InitializeTransitionActivity extends org.polarsys.capella.core.tran
         context.put(ITransitionConstants.TRANSITION_TARGET_ROOT, root);
       }
     } else {
-      return new Status(IStatus.ERROR, Messages.Activity_Transition, "Output model is invalid");
+      return new Status(IStatus.ERROR, Messages.Activity_Transition, Messages.InitializeTransitionActivity_0);
     }
 
     return Status.OK_STATUS;

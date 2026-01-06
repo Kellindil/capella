@@ -27,6 +27,8 @@ public class Messages extends NLS {
   public static String Activity_MergingDifferenceActivity;
   public static String Activity_Transition;
   public static String Activity_Transformation;
+
+  public static String InitializeTransitionActivity_0;
   public static String TransitionedElement_Suffix;
   public static String TraceabilityHandler;
 
