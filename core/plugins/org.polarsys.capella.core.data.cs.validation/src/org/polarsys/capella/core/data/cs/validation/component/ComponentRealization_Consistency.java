@@ -89,13 +89,13 @@ public class ComponentRealization_Consistency extends AbstractValidationRule {
               if (validTarget.containsKey(source.eClass()) && !validTarget.get(source.eClass()).isInstance(target)) {
                 statuses.add(ctx.createFailureStatus(actorInfo // $NON-NLS-1$
                     + " contain realization with inconsistent Target (it should be instance of " //$NON-NLS-1$
-                    + validTarget.get(source.eClass()).getName() + ")"));
+                    + validTarget.get(source.eClass()).getName() + ")")); //$NON-NLS-1$
               }
 
               if (validSource.containsKey(target.eClass()) && !validSource.get(target.eClass()).isInstance(source)) {
                 statuses.add(ctx.createFailureStatus(actorInfo // $NON-NLS-1$
                     + " contain realization with inconsistent Source (it should be instance of " //$NON-NLS-1$
-                    + validSource.get(target.eClass()).getName() + ")"));
+                    + validSource.get(target.eClass()).getName() + ")")); //$NON-NLS-1$
               }
             }
           }
