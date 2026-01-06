@@ -16,17 +16,17 @@ public interface IExportCSVPreferences {
 
   public static final IExportCSVPreferences INSTANCE = new ExportCSVPreferences();
 
-  final String DELIMITER_KEY = "delimiter";
+  final String DELIMITER_KEY = Messages.IExportCSVPreferences_0;
   
-  final String DELIMITER_VALUE_TAB = "tab";
-  final String DELIMITER_VALUE_SEMICOLON = "semicolon";
-  final String DELIMITER_VALUE_COMMA = "comma";
-  final String DELIMITER_VALUE_SPACE = "space";
-  final String DELIMITER_VALUE_OTHER = "other";
+  final String DELIMITER_VALUE_TAB = Messages.IExportCSVPreferences_1;
+  final String DELIMITER_VALUE_SEMICOLON = Messages.IExportCSVPreferences_2;
+  final String DELIMITER_VALUE_COMMA = Messages.IExportCSVPreferences_3;
+  final String DELIMITER_VALUE_SPACE = Messages.IExportCSVPreferences_4;
+  final String DELIMITER_VALUE_OTHER = Messages.IExportCSVPreferences_5;
   final String DELIMITER_VALUE_DEFAULT = DELIMITER_VALUE_COMMA;
 
-  final String OTHER_DELIMITER_KEY = "other";
-  final String OTHER_DELIMITER_VALUE_DEFAULT = "";
+  final String OTHER_DELIMITER_KEY = Messages.IExportCSVPreferences_6;
+  final String OTHER_DELIMITER_VALUE_DEFAULT = ""; //$NON-NLS-1$
 
   public char getDelimiterCurrentValue();
 
