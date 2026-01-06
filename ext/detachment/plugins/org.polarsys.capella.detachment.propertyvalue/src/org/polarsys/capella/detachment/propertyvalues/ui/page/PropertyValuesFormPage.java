@@ -239,7 +239,7 @@ public class PropertyValuesFormPage extends org.polarsys.kitalpha.model.detachme
 		new ToolItem(treeManagementBar, SWT.SEPARATOR | SWT.VERTICAL);
 		
 		//Text filter
-		final Text inputFilter = tk.createText(toolbarsComposite, "", SWT.SINGLE | SWT.LEFT | SWT.SEARCH);
+		final Text inputFilter = tk.createText(toolbarsComposite, "", SWT.SINGLE | SWT.LEFT | SWT.SEARCH); //$NON-NLS-1$
 		inputFilter.setToolTipText(Messages.Filter_PropertyValue);
 		inputFilter.setMessage(". = any character, .* = any string"); //$NON-NLS-1$
 		inputFilter.setLayoutData(new GridData(GridData.GRAB_HORIZONTAL | GridData.HORIZONTAL_ALIGN_FILL));
@@ -262,7 +262,7 @@ public class PropertyValuesFormPage extends org.polarsys.kitalpha.model.detachme
 				} catch (PatternSyntaxException ex) {
 					inputFilter.setForeground(Display.getCurrent().getSystemColor(SWT.COLOR_RED));
 					if (errorToolTip == null) {
-						errorToolTip = new ErrorRegExpMessageToolTip(inputFilter, "");
+						errorToolTip = new ErrorRegExpMessageToolTip(inputFilter, ""); //$NON-NLS-1$
 					}
 
 					Point location = inputFilter.getLocation();
@@ -277,7 +277,7 @@ public class PropertyValuesFormPage extends org.polarsys.kitalpha.model.detachme
 	private void initializePvFilteringButton(ToolBar treeManagementBar) {
 		ToolItem pvItem = new ToolItem(treeManagementBar, SWT.CHECK);
 		pvItem.setImage(Constants.getPropertyValueIcon());
-		pvItem.setToolTipText("Property Values");
+		pvItem.setToolTipText(Messages.PropertyValuesFormPage_2);
 		pvItem.addListener(SWT.Selection, new Listener() {
 			@Override
 			public void handleEvent(Event event) {
@@ -289,7 +289,7 @@ public class PropertyValuesFormPage extends org.polarsys.kitalpha.model.detachme
 	private void initializePEnumFilteringButton(ToolBar treeManagementBar) {
 		ToolItem enumTypeItem = new ToolItem(treeManagementBar, SWT.CHECK);
 		enumTypeItem.setImage(Constants.getEnumTypeIcon());
-		enumTypeItem.setToolTipText("Property Enumeration Type");
+		enumTypeItem.setToolTipText(Messages.PropertyValuesFormPage_3);
 		enumTypeItem.addListener(SWT.Selection, new Listener() {
 
 			@Override
@@ -302,7 +302,7 @@ public class PropertyValuesFormPage extends org.polarsys.kitalpha.model.detachme
 	private void initializePgFilteringButton(ToolBar treeManagementBar) {
 		ToolItem pgItem = new ToolItem(treeManagementBar, SWT.CHECK);
 		pgItem.setImage(Constants.getPropertyGroupIcon());
-		pgItem.setToolTipText("Property Group");
+		pgItem.setToolTipText(Messages.PropertyValuesFormPage_4);
 		pgItem.addListener(SWT.Selection, new Listener() {
 
 			@Override
@@ -318,7 +318,7 @@ public class PropertyValuesFormPage extends org.polarsys.kitalpha.model.detachme
 		//Filtering tool item
 		ToolItem pkgItem = new ToolItem(treeManagementBar, SWT.CHECK);
 		pkgItem.setImage(Constants.getPropertyPackageIcon());
-		pkgItem.setToolTipText("Property Package");
+		pkgItem.setToolTipText(Messages.PropertyValuesFormPage_5);
 		pkgItem.addListener(SWT.Selection, new Listener() {
 
 			@Override
