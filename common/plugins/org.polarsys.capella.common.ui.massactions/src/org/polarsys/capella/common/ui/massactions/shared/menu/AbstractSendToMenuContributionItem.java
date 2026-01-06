@@ -142,7 +142,7 @@ public abstract class AbstractSendToMenuContributionItem extends CompoundContrib
     parameters.put(getCommandParameterSecondaryId(), secondaryViewId);
     parameters.put(getCommandParameterShouldCreateViewId(), String.valueOf(shouldCreateViewId));
 
-    CommandContributionItemParameter parameter = new CommandContributionItemParameter(serviceLocator, "",
+    CommandContributionItemParameter parameter = new CommandContributionItemParameter(serviceLocator, "", //$NON-NLS-1$
         getCommandID(), CommandContributionItem.STYLE_PULLDOWN);
     parameter.label = itemLabel;
     parameter.tooltip = itemLabel;
@@ -153,7 +153,7 @@ public abstract class AbstractSendToMenuContributionItem extends CompoundContrib
   }
 
   protected String getNewViewText() {
-    return "New " + getViewName() + " View";
+    return Messages.AbstractSendToMenuContributionItem_1 + getViewName() + Messages.AbstractSendToMenuContributionItem_2;
   }
 
   /**
