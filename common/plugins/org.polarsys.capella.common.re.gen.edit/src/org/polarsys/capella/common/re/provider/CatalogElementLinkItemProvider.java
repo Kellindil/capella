@@ -303,13 +303,13 @@ public class CatalogElementLinkItemProvider extends
 	@Override
 	public String getText(Object object) {
 		CatalogElementLink element = (CatalogElementLink) object;
-		String label = "";
+		String label = ""; //$NON-NLS-1$
 
 		if (element.getTarget() != null) {
 			IItemLabelProvider labelProvider = (IItemLabelProvider) (((ComposeableAdapterFactory) getAdapterFactory())
 					.getRootAdapterFactory()).adapt(element.getTarget(),
 					IItemLabelProvider.class);
-			label += NLS.bind("Link to ''{0}''",
+			label += NLS.bind(Messages.CatalogElementLinkItemProvider_1,
 					labelProvider.getText(element.getTarget()));
 		}
 
