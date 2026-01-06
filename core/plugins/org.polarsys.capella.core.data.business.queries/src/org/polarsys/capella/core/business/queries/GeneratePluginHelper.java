@@ -12,19 +12,19 @@ import org.polarsys.capella.common.queries.QuerySchema;
 class GeneratePluginHelper {
   public static void main(String[] args) {
 
-    System.out.println("init");
-    for (Class clazz : getClasses("org.polarsys.capella.core.business.queries", IBusinessQuery.class)) {
-      System.out.println("<MDEBusinessQueries class=\"" + clazz.getName() + "\" />");
+    System.out.println("init"); //$NON-NLS-1$
+    for (Class clazz : getClasses("org.polarsys.capella.core.business.queries", IBusinessQuery.class)) { //$NON-NLS-1$
+      System.out.println("<MDEBusinessQueries class=\"" + clazz.getName() + "\" />"); //$NON-NLS-1$ //$NON-NLS-2$
     }
 
-    for (Class clazz : getClasses("org.polarsys.capella.core.business.queries.queries", IQuery.class)) {
-      String extendedQueryIdentifier = "";
+    for (Class clazz : getClasses("org.polarsys.capella.core.business.queries.queries", IQuery.class)) { //$NON-NLS-1$
+      String extendedQueryIdentifier = ""; //$NON-NLS-1$
       ExtendingQuery annotation = (ExtendingQuery) clazz.getAnnotation(ExtendingQuery.class);
       if (annotation != null) {
-        extendedQueryIdentifier = " extendedQueryIdentifier=\"" + QuerySchema.getQueryIdentifier(annotation.extendingQuery()) + "\"";
+        extendedQueryIdentifier = " extendedQueryIdentifier=\"" + QuerySchema.getQueryIdentifier(annotation.extendingQuery()) + "\""; //$NON-NLS-1$ //$NON-NLS-2$
       }
-      System.out.println("    <querySpecification queryIdentifier=\"" + QuerySchema.getQueryIdentifier(clazz) + "\""+extendedQueryIdentifier+">\r\n"
-          + "      <queryAlgorithm algorithm=\"" + clazz.getName() + "\" />\r\n" + "    </querySpecification>");
+      System.out.println("    <querySpecification queryIdentifier=\"" + QuerySchema.getQueryIdentifier(clazz) + "\""+extendedQueryIdentifier+">\r\n" //$NON-NLS-1$ //$NON-NLS-2$ //$NON-NLS-3$
+          + "      <queryAlgorithm algorithm=\"" + clazz.getName() + "\" />\r\n" + "    </querySpecification>"); //$NON-NLS-1$ //$NON-NLS-2$ //$NON-NLS-3$
     }
 
     System.out.println();
@@ -40,9 +40,9 @@ class GeneratePluginHelper {
       for (File s : folder.listFiles()) {
         if (s.isDirectory()) {
           for (File s2 : s.listFiles()) {
-            if (s2.getName().endsWith(".class")) {
-              String sss = s2.getAbsolutePath().substring(s2.getAbsolutePath().indexOf("bin\\") + 4)
-                  .replaceAll("\\\\", ".").replace(".class", "");
+            if (s2.getName().endsWith(".class")) { //$NON-NLS-1$
+              String sss = s2.getAbsolutePath().substring(s2.getAbsolutePath().indexOf("bin\\") + 4) //$NON-NLS-1$
+                  .replaceAll("\\\\", ".").replace(".class", ""); //$NON-NLS-1$ //$NON-NLS-2$ //$NON-NLS-3$ //$NON-NLS-4$
               try {
                 Class query = classLoader.loadClass(sss);
                 if (instance.isAssignableFrom(query)) {
