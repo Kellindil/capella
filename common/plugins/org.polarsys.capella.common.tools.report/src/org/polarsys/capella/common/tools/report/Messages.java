@@ -16,6 +16,7 @@ import org.eclipse.osgi.util.NLS;
 
 public class Messages extends NLS {
   private static final String BUNDLE_NAME = "org.polarsys.capella.common.tools.report.messages"; //$NON-NLS-1$
+  public static String EmbeddedMessage_0;
   public static String StatusRenderer_Cancel;
   static {
     // initialize resource bundle
