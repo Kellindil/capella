@@ -194,7 +194,7 @@ public class FileHelper {
   public static String readFile(String filePath) throws UnsupportedEncodingException {
     byte[] rawContent = readRawFile(filePath);
     String result;
-    result = (0 == rawContent.length) ? ICommonConstants.EMPTY_STRING : new String(rawContent, "UTF-8");
+    result = (0 == rawContent.length) ? ICommonConstants.EMPTY_STRING : new String(rawContent, "UTF-8"); //$NON-NLS-1$
     return result;
   }
 
@@ -269,7 +269,7 @@ public class FileHelper {
    * @return
    */
   public static boolean writeFile(String filePath, boolean ensureFolders, String contents) {
-    return writeFile(filePath, ensureFolders, contents.getBytes(Charset.forName("UTF-8")));
+    return writeFile(filePath, ensureFolders, contents.getBytes(Charset.forName("UTF-8"))); //$NON-NLS-1$
   }
 
   /**
