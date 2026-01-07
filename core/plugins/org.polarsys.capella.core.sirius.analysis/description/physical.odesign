@@ -870,7 +870,7 @@
                 <firstModelOperations xsi:type="tool:ChangeContext" browseExpression="aql:source.createDFFunctionalExchange(sourceView,targetView)"/>
               </initialOperation>
             </tools>
-            <tools xsi:type="tool_1:NodeCreationDescription" documentation="Creates a new Input Port on the target Function" name="input.port" label="%pa.pdfb.input.port" precondition="aql:containerView.isValidCreationFunctionInputPort()" nodeMappings="//@ownedViewpoints[name='Physical%20Architecture']/@ownedRepresentations[name='Physical%20Data%20Flow%20Blank']/@defaultLayer/@containerMappings[name='PDFB_Function']/@borderedNodeMappings[name='PDFB_Pin']" iconPath="/org.polarsys.capella.core.sirius.analysis/icons/full/obj16/InFlowPort.gif">
+            <tools xsi:type="tool_1:NodeCreationDescription" documentation="%pa.pdfb.input.port.desc" name="input.port" label="%pa.pdfb.input.port" precondition="aql:containerView.isValidCreationFunctionInputPort()" nodeMappings="//@ownedViewpoints[name='Physical%20Architecture']/@ownedRepresentations[name='Physical%20Data%20Flow%20Blank']/@defaultLayer/@containerMappings[name='PDFB_Function']/@borderedNodeMappings[name='PDFB_Pin']" iconPath="/org.polarsys.capella.core.sirius.analysis/icons/full/obj16/InFlowPort.gif">
               <variable name="container"/>
               <viewVariable name="containerView"/>
               <initialOperation>
@@ -881,7 +881,7 @@
                 </firstModelOperations>
               </initialOperation>
             </tools>
-            <tools xsi:type="tool_1:NodeCreationDescription" documentation="Creates a new Output Port on the target Function" name="output.port" label="%pa.pdfb.output.port" precondition="aql:containerView.isValidCreationFunctionOutputPort()" nodeMappings="//@ownedViewpoints[name='Physical%20Architecture']/@ownedRepresentations[name='Physical%20Data%20Flow%20Blank']/@defaultLayer/@containerMappings[name='PDFB_Function']/@borderedNodeMappings[name='PDFB_Pin']" iconPath="/org.polarsys.capella.core.sirius.analysis/icons/full/obj16/OutFlowPort.gif">
+            <tools xsi:type="tool_1:NodeCreationDescription" documentation="%pa.pdfb.output.port.desc" name="output.port" label="%pa.pdfb.output.port" precondition="aql:containerView.isValidCreationFunctionOutputPort()" nodeMappings="//@ownedViewpoints[name='Physical%20Architecture']/@ownedRepresentations[name='Physical%20Data%20Flow%20Blank']/@defaultLayer/@containerMappings[name='PDFB_Function']/@borderedNodeMappings[name='PDFB_Pin']" iconPath="/org.polarsys.capella.core.sirius.analysis/icons/full/obj16/OutFlowPort.gif">
               <variable name="container"/>
               <viewVariable name="containerView"/>
               <initialOperation>
@@ -921,7 +921,7 @@
             </initialOperation>
           </ownedTools>
           <ownedTools xsi:type="tool_1:ToolGroup" name="Show/Hide exchanges">
-            <tools xsi:type="tool:ToolDescription" documentation="Insert/Remove Functional Exchange. Create or delete graphical objects corresponding to already existing Functional Exchanges and the corresponding source/target Functions if they are not present on the diagram yet. Removing a Functional Exchange graphical object from the diagram does not delete the Functional Exchange from the model. This tool does not modify the semantic model." name="functional.exchanges" label="%pa.pdfb.functional.exchanges" precondition="aql:(elementView.target->filter(fa::AbstractFunction)->size() > 0) and (elementView->filter(diagram::DDiagram)->size() = 0)" forceRefresh="true" iconPath="/org.polarsys.capella.core.sirius.analysis/icons/full/obj16/ShowHide.gif">
+            <tools xsi:type="tool:ToolDescription" documentation="%pa.pdfb.functional.exchanges.desc" name="functional.exchanges" label="%pa.pdfb.functional.exchanges" precondition="aql:(elementView.target->filter(fa::AbstractFunction)->size() > 0) and (elementView->filter(diagram::DDiagram)->size() = 0)" forceRefresh="true" iconPath="/org.polarsys.capella.core.sirius.analysis/icons/full/obj16/ShowHide.gif">
               <element name="element"/>
               <elementView name="elementView">
                 <subVariables xsi:type="tool:AcceleoVariable" name="displayedExchanges" computationExpression="aql:self.void2Null(elementView.getDisplayedFunctionalExchanges())"/>
