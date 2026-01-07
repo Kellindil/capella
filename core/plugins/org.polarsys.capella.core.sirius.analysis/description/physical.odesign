@@ -148,9 +148,9 @@
           <mask mask="{0}"/>
         </directEdit>
         <create name="CFA" forceRefresh="true">
-          <variables name="lineSemantic" documentation="The semantic element corresponding to the line."/>
-          <variables name="columnSemantic" documentation="The semantic element corresponding to the column."/>
-          <variables name="root" documentation="The semantic root element of the table."/>
+          <variables name="lineSemantic" documentation="%pa.pcpi.create.cfa.var.lineSemantic"/>
+          <variables name="columnSemantic" documentation="%pa.pcpi.create.cfa.var.columnSemantic"/>
+          <variables name="root" documentation="%pa.pcpi.create.cfa.var.root"/>
           <firstModelOperation xsi:type="tool:ChangeContext" browseExpression="aql:lineSemantic">
             <subModelOperations xsi:type="tool:If" conditionExpression="aql:arg0 = 'X' and lineSemantic.getAvailableFunctionalAllocation()->includes(columnSemantic)">
               <subModelOperations xsi:type="tool:CreateInstance" typeName="ComponentFunctionalAllocation" referenceName="ownedFunctionalAllocation">
