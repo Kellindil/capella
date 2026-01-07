@@ -166,8 +166,8 @@
     <ownedRepresentations xsi:type="description_1:CrossTableDescription" name="Physical Interface - Logical Interface" label="%pi.pili" domainClass="PhysicalArchitecture">
       <ownedLineMappings name="PILI Physical Interface Line" domainClass="Interface" semanticCandidatesExpression="aql:self.eAllContents()->filter(cs::Interface)">
         <delete name="No delete" precondition="false">
-          <variables name="element" documentation="The currently edited element."/>
-          <variables name="root" documentation="The semantic element corresponding to the current table."/>
+          <variables name="element" documentation="%pa.pili.del.var.element"/>
+          <variables name="root" documentation="%pa.pili.del.var.root"/>
         </delete>
       </ownedLineMappings>
       <ownedColumnMappings name="PILI Logical Interface column" initialWidth="50" domainClass="Interface" semanticCandidatesExpression="aql:self.precedingSibling->filter(cs::BlockArchitecture)->last().eAllContents()->filter(cs::Interface)">
