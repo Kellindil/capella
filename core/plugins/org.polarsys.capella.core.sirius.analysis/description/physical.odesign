@@ -48,9 +48,9 @@
           <mask mask="{0}"/>
         </directEdit>
         <create name="FR2" forceRefresh="true">
-          <variables name="lineSemantic" documentation="The semantic element corresponding to the line."/>
-          <variables name="columnSemantic" documentation="The semantic element corresponding to the column."/>
-          <variables name="root" documentation="The semantic root element of the table."/>
+          <variables name="lineSemantic" documentation="%pa.pili.fr2.create.var.lineSemantic"/>
+          <variables name="columnSemantic" documentation="%pa.pili.fr2.create.var.columnSemantic"/>
+          <variables name="root" documentation="%pa.pili.fr2.create.var.root"/>
           <firstModelOperation xsi:type="tool:ChangeContext" browseExpression="aql:lineSemantic">
             <subModelOperations xsi:type="tool:If" conditionExpression="aql:arg0 = 'X'">
               <subModelOperations xsi:type="tool:CreateInstance" typeName="FunctionRealization" referenceName="ownedFunctionRealizations">
