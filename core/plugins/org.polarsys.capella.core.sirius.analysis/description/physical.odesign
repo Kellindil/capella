@@ -172,8 +172,8 @@
       </ownedLineMappings>
       <ownedColumnMappings name="PILI Logical Interface column" initialWidth="50" domainClass="Interface" semanticCandidatesExpression="aql:self.precedingSibling->filter(cs::BlockArchitecture)->last().eAllContents()->filter(cs::Interface)">
         <delete name="No delete" precondition="false">
-          <variables name="element" documentation="The currently edited element."/>
-          <variables name="root" documentation="The semantic element corresponding to the current table."/>
+          <variables name="element" documentation="%pa.pili.col.del.var.element"/>
+          <variables name="root" documentation="%pa.pili.col.del.var.root"/>
         </delete>
       </ownedColumnMappings>
       <intersection name="PILI Interface Realisation" lineMapping="//@ownedViewpoints[name='Physical%20Architecture']/@ownedRepresentations[name='Physical%20Interface%20-%20Logical%20Interface']/@ownedLineMappings[name='PILI%20Physical%20Interface%20Line']" columnMapping="//@ownedViewpoints[name='Physical%20Architecture']/@ownedRepresentations[name='Physical%20Interface%20-%20Logical%20Interface']/@ownedColumnMappings.0" labelExpression="X" useDomainClass="true" columnFinderExpression="feature:targetElement" lineFinderExpression="feature:sourceElement" domainClass="LogicalInterfaceRealization">
