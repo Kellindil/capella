@@ -117,13 +117,13 @@
       <ownedLineMappings name="Physical Components 3" domainClass="Component" semanticCandidatesExpression="aql:self.makeUnion(self.getSubComponents(), self.getSubActors())" headerLabelExpression="feature:name">
         <ownedSubLines name="Sub Physical Component 3" reusedSubLines="//@ownedViewpoints[name='Physical%20Architecture']/@ownedRepresentations[name='Physical%20Components%20-%20Physical%20Functions']/@ownedLineMappings[name='Physical%20Components%203']/@ownedSubLines[name='Sub%20Physical%20Component%203']" reusedInMappings="//@ownedViewpoints[name='Physical%20Architecture']/@ownedRepresentations[name='Physical%20Components%20-%20Physical%20Functions']/@ownedLineMappings[name='Physical%20Components%203']/@ownedSubLines[name='Sub%20Physical%20Component%203']" domainClass="PhysicalComponent" semanticCandidatesExpression="aql:self.makeUnion(self.getSubComponents(), self.getSubActors())" headerLabelExpression="feature:name">
           <delete name="No delete" precondition="false">
-            <variables name="element" documentation="The currently edited element."/>
-            <variables name="root" documentation="The semantic element corresponding to the current table."/>
+            <variables name="element" documentation="%pa.pcpi.del.phy3.subphy3.var.element"/>
+            <variables name="root" documentation="%pa.pcpi.del.phy3.subphy3.var.root"/>
           </delete>
         </ownedSubLines>
         <delete name="No delete" precondition="false">
-          <variables name="element" documentation="The currently edited element."/>
-          <variables name="root" documentation="The semantic element corresponding to the current table."/>
+          <variables name="element" documentation="%pa.pcpi.del.phy3.var.element"/>
+          <variables name="root" documentation="%pa.pcpi.del.phy3.var.root"/>
         </delete>
       </ownedLineMappings>
       <ownedColumnMappings name="Physical Functions" headerLabelExpression="feature:name" domainClass="AbstractFunction" semanticCandidatesExpression="aql:self.getAllLeafAbstractFunctions()">
