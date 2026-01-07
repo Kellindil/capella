@@ -67,13 +67,13 @@
       <ownedLineMappings name="Physical Components 1" domainClass="PhysicalComponent" semanticCandidatesExpression="aql:self.getSubComponents()" headerLabelExpression="feature:name">
         <ownedSubLines name="Sub Physical Component 1" reusedSubLines="//@ownedViewpoints[name='Physical%20Architecture']/@ownedRepresentations[name='Physical%20Components%20-%20Logical%20Components']/@ownedLineMappings[name='Physical%20Components%201']/@ownedSubLines[name='Sub%20Physical%20Component%201']" reusedInMappings="//@ownedViewpoints[name='Physical%20Architecture']/@ownedRepresentations[name='Physical%20Components%20-%20Logical%20Components']/@ownedLineMappings[name='Physical%20Components%201']/@ownedSubLines[name='Sub%20Physical%20Component%201']" domainClass="PhysicalComponent" semanticCandidatesExpression="aql:self.getSubComponents()" headerLabelExpression="feature:name">
           <delete name="No delete" precondition="false">
-            <variables name="element" documentation="The currently edited element."/>
-            <variables name="root" documentation="The semantic element corresponding to the current table."/>
+            <variables name="element" documentation="%pa.pilc.del.phy1.subphy1.var.element"/>
+            <variables name="root" documentation="%pa.pilc.del.phy1.subphy1.var.root"/>
           </delete>
         </ownedSubLines>
         <delete name="No delete" precondition="false">
-          <variables name="element" documentation="The currently edited element."/>
-          <variables name="root" documentation="The semantic element corresponding to the current table."/>
+          <variables name="element" documentation="%pa.pilc.del.phy1.var.element"/>
+          <variables name="root" documentation="%pa.pilc.del.phy1.var.root"/>
         </delete>
       </ownedLineMappings>
       <ownedColumnMappings name="Logical Components" headerLabelExpression="feature:name" domainClass="LogicalComponent" semanticCandidatesExpression="aql:self.eContainer().containedLogicalArchitectures.eAllContents()->filter(la::LogicalComponent)->select(c | not c.isActor())">
