@@ -5,31 +5,31 @@
       <ownedLineMappings name="Physical Functions 1" domainClass="AbstractFunction" semanticCandidatesExpression="aql:self.getTableRootAbstractFunctions()" headerLabelExpression="feature:name">
         <ownedSubLines name="Sub Physical Functions 1" reusedSubLines="//@ownedViewpoints[name='Physical%20Architecture']/@ownedRepresentations[name='Physical%20Functions%20-%20Logical%20Functions']/@ownedLineMappings[name='Physical%20Functions%201']/@ownedSubLines[name='Sub%20Physical%20Functions%20Pkg%201'] //@ownedViewpoints[name='Physical%20Architecture']/@ownedRepresentations[name='Physical%20Functions%20-%20Logical%20Functions']/@ownedLineMappings[name='Physical%20Functions%201']/@ownedSubLines[name='Sub%20Physical%20Functions%201']" reusedInMappings="//@ownedViewpoints[name='Physical%20Architecture']/@ownedRepresentations[name='Physical%20Functions%20-%20Logical%20Functions']/@ownedLineMappings[name='FunctionPkgs'] //@ownedViewpoints[name='Physical%20Architecture']/@ownedRepresentations[name='Physical%20Functions%20-%20Logical%20Functions']/@ownedLineMappings[name='Physical%20Functions%201']/@ownedSubLines[name='Sub%20Physical%20Functions%20Pkg%201'] //@ownedViewpoints[name='Physical%20Architecture']/@ownedRepresentations[name='Physical%20Functions%20-%20Logical%20Functions']/@ownedLineMappings[name='Physical%20Functions%201']/@ownedSubLines[name='Sub%20Physical%20Functions%201']" domainClass="PhysicalFunction" semanticCandidatesExpression="aql:self.getOwnedAbstractFunctions()" headerLabelExpression="feature:name">
           <delete name="No delete" precondition="false">
-            <variables name="element" documentation="The currently edited element."/>
-            <variables name="root" documentation="The semantic element corresponding to the current table."/>
+            <variables name="element" documentation="%pa.pili.subphy.1.currently.edited.element"/>
+            <variables name="root" documentation="%pa.pili.subphy.1.table.semantic.element"/>
           </delete>
         </ownedSubLines>
         <ownedSubLines name="Sub Physical Functions Pkg 1" reusedSubLines="//@ownedViewpoints[name='Physical%20Architecture']/@ownedRepresentations[name='Physical%20Functions%20-%20Logical%20Functions']/@ownedLineMappings[name='Physical%20Functions%201']/@ownedSubLines[name='Sub%20Physical%20Functions%201'] //@ownedViewpoints[name='Physical%20Architecture']/@ownedRepresentations[name='Physical%20Functions%20-%20Logical%20Functions']/@ownedLineMappings[name='Physical%20Functions%201']/@ownedSubLines[name='Sub%20Physical%20Functions%20Pkg%201']" reusedInMappings="//@ownedViewpoints[name='Physical%20Architecture']/@ownedRepresentations[name='Physical%20Functions%20-%20Logical%20Functions']/@ownedLineMappings[name='FunctionPkgs'] //@ownedViewpoints[name='Physical%20Architecture']/@ownedRepresentations[name='Physical%20Functions%20-%20Logical%20Functions']/@ownedLineMappings[name='Physical%20Functions%201']/@ownedSubLines[name='Sub%20Physical%20Functions%20Pkg%201'] //@ownedViewpoints[name='Physical%20Architecture']/@ownedRepresentations[name='Physical%20Functions%20-%20Logical%20Functions']/@ownedLineMappings[name='Physical%20Functions%201']/@ownedSubLines[name='Sub%20Physical%20Functions%201']" domainClass="FunctionPkg" semanticCandidatesExpression="aql:self.getOwnedAbstractFunctionPkgs()" headerLabelExpression="feature:name">
           <delete name="No delete" precondition="false">
-            <variables name="element" documentation="The currently edited element."/>
-            <variables name="root" documentation="The semantic element corresponding to the current table."/>
+            <variables name="element" documentation="%pa.pili.subphy.1.pkg.currently.selected.element"/>
+            <variables name="root" documentation="%pa.pili.subphy.1.table.pkg.semantic.element"/>
           </delete>
         </ownedSubLines>
         <delete name="No delete" precondition="false">
-          <variables name="element" documentation="The currently edited element."/>
-          <variables name="root" documentation="The semantic element corresponding to the current table."/>
+          <variables name="element" documentation="%pa.pili.edited.element"/>
+          <variables name="root" documentation="%pa.pili.semantic.element"/>
         </delete>
       </ownedLineMappings>
       <ownedLineMappings name="FunctionPkgs" reusedSubLines="//@ownedViewpoints[name='Physical%20Architecture']/@ownedRepresentations[name='Physical%20Functions%20-%20Logical%20Functions']/@ownedLineMappings[name='Physical%20Functions%201']/@ownedSubLines[name='Sub%20Physical%20Functions%20Pkg%201'] //@ownedViewpoints[name='Physical%20Architecture']/@ownedRepresentations[name='Physical%20Functions%20-%20Logical%20Functions']/@ownedLineMappings[name='Physical%20Functions%201']/@ownedSubLines[name='Sub%20Physical%20Functions%201']" domainClass="FunctionPkg" semanticCandidatesExpression="aql:self.getTableRootAbstractFunctionPkgs()">
         <delete name="No delete" precondition="false">
-          <variables name="element" documentation="The currently edited element."/>
-          <variables name="root" documentation="The semantic element corresponding to the current table."/>
+          <variables name="element" documentation="%pa.pili.fpkgs.edited.element"/>
+          <variables name="root" documentation="%pa.pili.fpkgs.semantic.element"/>
         </delete>
       </ownedLineMappings>
       <ownedColumnMappings name="Logical Functions 2" headerLabelExpression="feature:name" domainClass="AbstractFunction" semanticCandidatesExpression="aql:self.getRootContainer().eAllContents()->filter(la::LogicalArchitecture).eAllContents()->filter(fa::AbstractFunction)->first().eAllContents()->filter(fa::AbstractFunction)">
         <delete name="No delete" precondition="false">
-          <variables name="element" documentation="The currently edited element."/>
-          <variables name="root" documentation="The semantic element corresponding to the current table."/>
+          <variables name="element" documentation="%pa.pili.lf2.edited.element"/>
+          <variables name="root" documentation="%pa.pili.lf2.semantic.element"/>
         </delete>
       </ownedColumnMappings>
       <intersection name="Function Realisations 2" lineMapping="//@ownedViewpoints[name='Physical%20Architecture']/@ownedRepresentations[name='Physical%20Functions%20-%20Logical%20Functions']/@ownedLineMappings[name='Physical%20Functions%201'] //@ownedViewpoints[name='Physical%20Architecture']/@ownedRepresentations[name='Physical%20Functions%20-%20Logical%20Functions']/@ownedLineMappings[name='Physical%20Functions%201']/@ownedSubLines[name='Sub%20Physical%20Functions%201']" columnMapping="//@ownedViewpoints[name='Physical%20Architecture']/@ownedRepresentations[name='Physical%20Functions%20-%20Logical%20Functions']/@ownedColumnMappings.0" labelExpression="X" useDomainClass="true" columnFinderExpression="aql:self.allocatedFunction->filter(fa::AbstractFunction)" lineFinderExpression="aql:self.allocatingFunction->filter(fa::AbstractFunction)" domainClass="FunctionRealization">
