@@ -178,12 +178,12 @@
       </ownedColumnMappings>
       <intersection name="PILI Interface Realisation" lineMapping="//@ownedViewpoints[name='Physical%20Architecture']/@ownedRepresentations[name='Physical%20Interface%20-%20Logical%20Interface']/@ownedLineMappings[name='PILI%20Physical%20Interface%20Line']" columnMapping="//@ownedViewpoints[name='Physical%20Architecture']/@ownedRepresentations[name='Physical%20Interface%20-%20Logical%20Interface']/@ownedColumnMappings.0" labelExpression="X" useDomainClass="true" columnFinderExpression="feature:targetElement" lineFinderExpression="feature:sourceElement" domainClass="LogicalInterfaceRealization">
         <directEdit>
-          <variables name="table" documentation="The current DTable."/>
-          <variables name="line" documentation="The DLine of the current DCell."/>
-          <variables name="element" documentation="The currently edited element."/>
-          <variables name="lineSemantic" documentation="The semantic element corresponding to the line."/>
-          <variables name="columnSemantic" documentation="The semantic element corresponding to the column."/>
-          <variables name="root" documentation="The semantic element of the table."/>
+          <variables name="table" documentation="%pa.pili.int.edit.var.table"/>
+          <variables name="line" documentation="%pa.pili.int.edit.var.line"/>
+          <variables name="element" documentation="%pa.pili.int.edit.var.element"/>
+          <variables name="lineSemantic" documentation="%pa.pili.int.edit.var.lineSemantic"/>
+          <variables name="columnSemantic" documentation="%pa.pili.int.edit.var.columnSemantic"/>
+          <variables name="root" documentation="%pa.pili.int.edit.var.root"/>
           <firstModelOperation xsi:type="tool:If" conditionExpression="aql:arg0 = '' and root.eAllContents()->filter(pa::LogicalInterfaceRealization)->select(x | x.targetElement = columnSemantic and x.sourceElement = lineSemantic)->size() > 0">
             <subModelOperations xsi:type="tool:ChangeContext" browseExpression="aql:root.eAllContents()->filter(pa::LogicalInterfaceRealization)->select(x | x.targetElement = columnSemantic and x.sourceElement = lineSemantic)->first()">
               <subModelOperations xsi:type="tool:RemoveElement"/>
