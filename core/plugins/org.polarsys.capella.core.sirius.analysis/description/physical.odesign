@@ -34,12 +34,12 @@
       </ownedColumnMappings>
       <intersection name="Function Realisations 2" lineMapping="//@ownedViewpoints[name='Physical%20Architecture']/@ownedRepresentations[name='Physical%20Functions%20-%20Logical%20Functions']/@ownedLineMappings[name='Physical%20Functions%201'] //@ownedViewpoints[name='Physical%20Architecture']/@ownedRepresentations[name='Physical%20Functions%20-%20Logical%20Functions']/@ownedLineMappings[name='Physical%20Functions%201']/@ownedSubLines[name='Sub%20Physical%20Functions%201']" columnMapping="//@ownedViewpoints[name='Physical%20Architecture']/@ownedRepresentations[name='Physical%20Functions%20-%20Logical%20Functions']/@ownedColumnMappings.0" labelExpression="X" useDomainClass="true" columnFinderExpression="aql:self.allocatedFunction->filter(fa::AbstractFunction)" lineFinderExpression="aql:self.allocatingFunction->filter(fa::AbstractFunction)" domainClass="FunctionRealization">
         <directEdit>
-          <variables name="table" documentation="The current DTable."/>
-          <variables name="line" documentation="The DLine of the current DCell."/>
-          <variables name="element" documentation="The currently edited element."/>
-          <variables name="lineSemantic" documentation="The semantic element corresponding to the line."/>
-          <variables name="columnSemantic" documentation="The semantic element corresponding to the column."/>
-          <variables name="root" documentation="The semantic element of the table."/>
+          <variables name="table" documentation="%pa.pili.fr2.var.table"/>
+          <variables name="line" documentation="%pa.pili.fr2.var.line"/>
+          <variables name="element" documentation="%pa.pili.fr2.var.element"/>
+          <variables name="lineSemantic" documentation="%pa.pili.fr2.var.lineSemantic"/>
+          <variables name="columnSemantic" documentation="%pa.pili.fr2.var.columnSemantic"/>
+          <variables name="root" documentation="%pa.pili.fr2.var.root"/>
           <firstModelOperation xsi:type="tool:If" conditionExpression="aql:arg0 = '' and lineSemantic.ownedFunctionRealizations->select(ownedFunctionRealization | ownedFunctionRealization.allocatedFunction = columnSemantic and ownedFunctionRealization.allocatingFunction = lineSemantic)->size() > 0">
             <subModelOperations xsi:type="tool:ChangeContext" browseExpression="aql:lineSemantic.ownedFunctionRealizations->select(ownedFunctionRealization | ownedFunctionRealization.allocatedFunction = columnSemantic and ownedFunctionRealization.allocatingFunction = lineSemantic)->first()">
               <subModelOperations xsi:type="tool:RemoveElement"/>
