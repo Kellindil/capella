@@ -128,8 +128,8 @@
       </ownedLineMappings>
       <ownedColumnMappings name="Physical Functions" headerLabelExpression="feature:name" domainClass="AbstractFunction" semanticCandidatesExpression="aql:self.getAllLeafAbstractFunctions()">
         <delete name="No delete" precondition="false">
-          <variables name="element" documentation="The currently edited element."/>
-          <variables name="root" documentation="The semantic element corresponding to the current table."/>
+          <variables name="element" documentation="%pa.pcpi.del.pf.var.element"/>
+          <variables name="root" documentation="%pa.pcpi.del.pf.var.root"/>
         </delete>
       </ownedColumnMappings>
       <intersection name="Component Functional Allocations" lineMapping="//@ownedViewpoints[name='Physical%20Architecture']/@ownedRepresentations[name='Physical%20Components%20-%20Physical%20Functions']/@ownedLineMappings[name='Physical%20Components%203'] //@ownedViewpoints[name='Physical%20Architecture']/@ownedRepresentations[name='Physical%20Components%20-%20Physical%20Functions']/@ownedLineMappings[name='Physical%20Components%203']/@ownedSubLines[name='Sub%20Physical%20Component%203']" columnMapping="//@ownedViewpoints[name='Physical%20Architecture']/@ownedRepresentations[name='Physical%20Components%20-%20Physical%20Functions']/@ownedColumnMappings.0" labelExpression="X" useDomainClass="true" columnFinderExpression="aql:self.function->filter(fa::AbstractFunction)" lineFinderExpression="feature:block" domainClass="ComponentFunctionalAllocation">
