@@ -461,7 +461,7 @@
               </firstModelOperations>
             </initialOperation>
           </ownedTools>
-          <ownedTools xsi:type="tool_1:EdgeCreationDescription" documentation="Allocate a Source Constraint to an available Target Capella Element." name="constraint.element" label="%pa.pfbd.constraint.element" precondition="aql:not (preSource.constrainedElements->includes(preTarget))" forceRefresh="true" iconPath="/org.polarsys.capella.core.sirius.analysis/icons/full/obj16/ClassCarries.gif">
+          <ownedTools xsi:type="tool_1:EdgeCreationDescription" documentation="%pa.pfbd.constraint.element.desc" name="constraint.element" label="%pa.pfbd.constraint.element" precondition="aql:not (preSource.constrainedElements->includes(preTarget))" forceRefresh="true" iconPath="/org.polarsys.capella.core.sirius.analysis/icons/full/obj16/ClassCarries.gif">
             <edgeMappings href="common.odesign#//@ownedViewpoints[name='Common']/@ownedRepresentations[name='Class%20Diagram%20Blank']/@defaultLayer/@edgeMappings[name='DT_ContrainedElements']"/>
             <sourceVariable name="source"/>
             <targetVariable name="target"/>
@@ -483,7 +483,7 @@
               </firstModelOperations>
             </initialOperation>
           </ownedTools>
-          <ownedTools xsi:type="tool:ToolDescription" documentation="Creates or deletes graphical objects corresponding to existing Constraints. Removing a Constraint graphical object does not delete this Constraint from the model. This tool does not modify the semantic model." name="constraints" label="%pa.pfbd.constraints" iconPath="/org.polarsys.capella.core.sirius.analysis/icons/full/obj16/ShowHide.gif">
+          <ownedTools xsi:type="tool:ToolDescription" documentation="%pa.pfbd.constraints.desc" name="constraints" label="%pa.pfbd.constraints" iconPath="/org.polarsys.capella.core.sirius.analysis/icons/full/obj16/ShowHide.gif">
             <element name="element"/>
             <elementView name="elementView">
               <subVariables xsi:type="tool:AcceleoVariable" name="constraintsInDiagram" computationExpression="aql:self.void2Null(self.getExistingConstraintsFromDiagram(elementView.getDiagramContainer()))"/>
@@ -613,7 +613,7 @@
       </concerns>
       <layout xsi:type="description_2:CompositeLayout" direction="LeftToRight"/>
       <defaultLayer name="default">
-        <nodeMappings name="PDFB_Node" preconditionExpression="false" labelDirectEdit="//@ownedViewpoints[name='Physical%20Architecture']/@ownedRepresentations[name='Physical%20Data%20Flow%20Blank']/@defaultLayer/@toolSections.0/@ownedTools[name='node']" semanticCandidatesExpression="" createElements="false" documentation="precondition : (filter(&quot;ForkFunction&quot;)+filter(&quot;JoinFunction&quot;)+filter(&quot;DecisionFunction&quot;)).nSize > 0 &amp;&amp; eContainer(&quot;PhysicalFunctionPkg&quot;).eAllContents().filter(&quot;FunctionalExchange&quot;)[(source == current(1) &amp;&amp; $viewpoint.target.eAllContents().nContains(target)) || (target == current(1) &amp;&amp; $viewpoint.target.eAllContents().nContains(source))].nSize() > 0" domainClass="AbstractFunction">
+        <nodeMappings name="PDFB_Node" preconditionExpression="false" labelDirectEdit="//@ownedViewpoints[name='Physical%20Architecture']/@ownedRepresentations[name='Physical%20Data%20Flow%20Blank']/@defaultLayer/@toolSections.0/@ownedTools[name='node']" semanticCandidatesExpression="" createElements="false" documentation="%pdfb.node.mapping.precondition" domainClass="AbstractFunction">
           <style xsi:type="style:SquareDescription" borderSizeComputationExpression="1" labelExpression="service:capellaLabelService(view, diagram)" sizeComputationExpression="" resizeKind="NSEW">
             <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
             <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
@@ -769,7 +769,7 @@
         <reusedMappings xsi:type="description_2:EdgeMapping" href="common.odesign#//@ownedViewpoints[name='Common']/@ownedRepresentations[name='Class%20Diagram%20Blank']/@defaultLayer/@edgeMappings[name='DT_TitleBlockEdge']"/>
         <toolSections name="Functions">
           <ownedTools xsi:type="tool_1:ToolGroup" name="FunctionCreation">
-            <tools xsi:type="tool_1:ContainerCreationDescription" documentation="Creates a new Physical Function" name="function" label="%pa.pdfb.function" precondition="aql:containerView.isValidCreationDFFunction()" containerMappings="//@ownedViewpoints[name='Physical%20Architecture']/@ownedRepresentations[name='Physical%20Data%20Flow%20Blank']/@defaultLayer/@containerMappings[name='PDFB_Function']">
+            <tools xsi:type="tool_1:ContainerCreationDescription" documentation="%pa.pdfb.function.desc" name="function" label="%pa.pdfb.function" precondition="aql:containerView.isValidCreationDFFunction()" containerMappings="//@ownedViewpoints[name='Physical%20Architecture']/@ownedRepresentations[name='Physical%20Data%20Flow%20Blank']/@defaultLayer/@containerMappings[name='PDFB_Function']">
               <variable name="container"/>
               <viewVariable name="containerView"/>
               <initialOperation>
@@ -784,7 +784,7 @@
                 </firstModelOperations>
               </initialOperation>
             </tools>
-            <tools xsi:type="tool_1:ContainerCreationDescription" documentation="Creates a new Duplicate" name="duplicate" label="%pa.pdfb.duplicate" precondition="aql:containerView.isValidCreationDFControlNode()" containerMappings="//@ownedViewpoints[name='Physical%20Architecture']/@ownedRepresentations[name='Physical%20Data%20Flow%20Blank']/@defaultLayer/@containerMappings[name='PDFB_Function']" iconPath="/org.polarsys.capella.core.sirius.analysis/icons/full/obj16/FunctionKind_Duplicate.gif">
+            <tools xsi:type="tool_1:ContainerCreationDescription" documentation="%pa.pdfb.duplicate.desc" name="duplicate" label="%pa.pdfb.duplicate" precondition="aql:containerView.isValidCreationDFControlNode()" containerMappings="//@ownedViewpoints[name='Physical%20Architecture']/@ownedRepresentations[name='Physical%20Data%20Flow%20Blank']/@defaultLayer/@containerMappings[name='PDFB_Function']" iconPath="/org.polarsys.capella.core.sirius.analysis/icons/full/obj16/FunctionKind_Duplicate.gif">
               <variable name="container"/>
               <viewVariable name="containerView"/>
               <initialOperation>
@@ -799,7 +799,7 @@
                 </firstModelOperations>
               </initialOperation>
             </tools>
-            <tools xsi:type="tool_1:ContainerCreationDescription" documentation="Creates a new Gather" name="gather" label="%pa.pdfb.gather" precondition="aql:containerView.isValidCreationDFControlNode()" containerMappings="//@ownedViewpoints[name='Physical%20Architecture']/@ownedRepresentations[name='Physical%20Data%20Flow%20Blank']/@defaultLayer/@containerMappings[name='PDFB_Function']" iconPath="/org.polarsys.capella.core.sirius.analysis/icons/full/obj16/FunctionKind_Gather.gif">
+            <tools xsi:type="tool_1:ContainerCreationDescription" documentation="%pa.pdfb.gather.desc" name="gather" label="%pa.pdfb.gather" precondition="aql:containerView.isValidCreationDFControlNode()" containerMappings="//@ownedViewpoints[name='Physical%20Architecture']/@ownedRepresentations[name='Physical%20Data%20Flow%20Blank']/@defaultLayer/@containerMappings[name='PDFB_Function']" iconPath="/org.polarsys.capella.core.sirius.analysis/icons/full/obj16/FunctionKind_Gather.gif">
               <variable name="container"/>
               <viewVariable name="containerView"/>
               <initialOperation>
@@ -814,7 +814,7 @@
                 </firstModelOperations>
               </initialOperation>
             </tools>
-            <tools xsi:type="tool_1:ContainerCreationDescription" documentation="Creates a new Route" name="route" label="%pa.pdfb.route" precondition="aql:containerView.isValidCreationDFControlNode()" containerMappings="//@ownedViewpoints[name='Physical%20Architecture']/@ownedRepresentations[name='Physical%20Data%20Flow%20Blank']/@defaultLayer/@containerMappings[name='PDFB_Function']" iconPath="/org.polarsys.capella.core.sirius.analysis/icons/full/obj16/FunctionKind_Route.gif">
+            <tools xsi:type="tool_1:ContainerCreationDescription" documentation="%pa.pdfb.route.desc" name="route" label="%pa.pdfb.route" precondition="aql:containerView.isValidCreationDFControlNode()" containerMappings="//@ownedViewpoints[name='Physical%20Architecture']/@ownedRepresentations[name='Physical%20Data%20Flow%20Blank']/@defaultLayer/@containerMappings[name='PDFB_Function']" iconPath="/org.polarsys.capella.core.sirius.analysis/icons/full/obj16/FunctionKind_Route.gif">
               <variable name="container"/>
               <viewVariable name="containerView"/>
               <initialOperation>
@@ -829,7 +829,7 @@
                 </firstModelOperations>
               </initialOperation>
             </tools>
-            <tools xsi:type="tool_1:ContainerCreationDescription" documentation="Creates a new Select" name="select" label="%pa.pdfb.select" precondition="aql:containerView.isValidCreationDFControlNode()" containerMappings="//@ownedViewpoints[name='Physical%20Architecture']/@ownedRepresentations[name='Physical%20Data%20Flow%20Blank']/@defaultLayer/@containerMappings[name='PDFB_Function']" iconPath="/org.polarsys.capella.core.sirius.analysis/icons/full/obj16/FunctionKind_Select.gif">
+            <tools xsi:type="tool_1:ContainerCreationDescription" documentation="pa.pdfb.select.desc" name="select" label="%pa.pdfb.select" precondition="aql:containerView.isValidCreationDFControlNode()" containerMappings="//@ownedViewpoints[name='Physical%20Architecture']/@ownedRepresentations[name='Physical%20Data%20Flow%20Blank']/@defaultLayer/@containerMappings[name='PDFB_Function']" iconPath="/org.polarsys.capella.core.sirius.analysis/icons/full/obj16/FunctionKind_Select.gif">
               <variable name="container"/>
               <viewVariable name="containerView"/>
               <initialOperation>
@@ -844,7 +844,7 @@
                 </firstModelOperations>
               </initialOperation>
             </tools>
-            <tools xsi:type="tool_1:ContainerCreationDescription" documentation="Creates a new Split" name="split" label="%pa.pdfb.split" precondition="aql:containerView.isValidCreationDFControlNode()" containerMappings="//@ownedViewpoints[name='Physical%20Architecture']/@ownedRepresentations[name='Physical%20Data%20Flow%20Blank']/@defaultLayer/@containerMappings[name='PDFB_Function']" iconPath="/org.polarsys.capella.core.sirius.analysis/icons/full/obj16/FunctionKind_Split.gif">
+            <tools xsi:type="tool_1:ContainerCreationDescription" documentation="%pa.pdfb.split.desc" name="split" label="%pa.pdfb.split" precondition="aql:containerView.isValidCreationDFControlNode()" containerMappings="//@ownedViewpoints[name='Physical%20Architecture']/@ownedRepresentations[name='Physical%20Data%20Flow%20Blank']/@defaultLayer/@containerMappings[name='PDFB_Function']" iconPath="/org.polarsys.capella.core.sirius.analysis/icons/full/obj16/FunctionKind_Split.gif">
               <variable name="container"/>
               <viewVariable name="containerView"/>
               <initialOperation>
@@ -861,7 +861,7 @@
             </tools>
           </ownedTools>
           <ownedTools xsi:type="tool_1:ToolGroup" name="FunctionalExchanges">
-            <tools xsi:type="tool_1:EdgeCreationDescription" documentation="Creates a new Functional Exchange between the Source and Target Physical Functions. If necessary, Function Ports are created automatically. The Functional Exchange is created under the common parent Function of the Source and Target." name="functional.exchange" label="%pa.pdfb.functional.exchange" precondition="aql:self.isValidCreationFunctionalExchange(preSource,preTarget)" elementsToSelect="var:result" edgeMappings="//@ownedViewpoints[name='Physical%20Architecture']/@ownedRepresentations[name='Physical%20Data%20Flow%20Blank']/@defaultLayer/@edgeMappings[name='PDFB_Exchange']" iconPath="/org.polarsys.capella.core.sirius.analysis/icons/full/obj16/FunctionalExchange.gif" extraSourceMappings="//@ownedViewpoints[name='Physical%20Architecture']/@ownedRepresentations[name='Physical%20Data%20Flow%20Blank']/@defaultLayer/@containerMappings[name='PDFB_Function']" extraTargetMappings="//@ownedViewpoints[name='Physical%20Architecture']/@ownedRepresentations[name='Physical%20Data%20Flow%20Blank']/@defaultLayer/@containerMappings[name='PDFB_Function']" connectionStartPrecondition="aql:self.isValidCreationFunctionalExchange(preSource)">
+            <tools xsi:type="tool_1:EdgeCreationDescription" documentation="" name="functional.exchange" label="%pa.pdfb.functional.exchange" precondition="aql:self.isValidCreationFunctionalExchange(preSource,preTarget)" elementsToSelect="var:result" edgeMappings="//@ownedViewpoints[name='Physical%20Architecture']/@ownedRepresentations[name='Physical%20Data%20Flow%20Blank']/@defaultLayer/@edgeMappings[name='PDFB_Exchange']" iconPath="/org.polarsys.capella.core.sirius.analysis/icons/full/obj16/FunctionalExchange.gif" extraSourceMappings="//@ownedViewpoints[name='Physical%20Architecture']/@ownedRepresentations[name='Physical%20Data%20Flow%20Blank']/@defaultLayer/@containerMappings[name='PDFB_Function']" extraTargetMappings="//@ownedViewpoints[name='Physical%20Architecture']/@ownedRepresentations[name='Physical%20Data%20Flow%20Blank']/@defaultLayer/@containerMappings[name='PDFB_Function']" connectionStartPrecondition="aql:self.isValidCreationFunctionalExchange(preSource)">
               <sourceVariable name="source"/>
               <targetVariable name="target"/>
               <sourceViewVariable name="sourceView"/>
