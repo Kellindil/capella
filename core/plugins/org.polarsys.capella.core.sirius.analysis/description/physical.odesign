@@ -192,9 +192,9 @@
           <mask mask="{0}"/>
         </directEdit>
         <create name="Context Interface Realisation" forceRefresh="true">
-          <variables name="lineSemantic" documentation="The semantic element corresponding to the line."/>
-          <variables name="columnSemantic" documentation="The semantic element corresponding to the column."/>
-          <variables name="root" documentation="The semantic root element of the table."/>
+          <variables name="lineSemantic" documentation="%pa.pili.cir.create.var.lineSemantic"/>
+          <variables name="columnSemantic" documentation="%pa.pili.cir.create.var.columnSemantic"/>
+          <variables name="root" documentation="%pa.pili.cir.create.var.root"/>
           <firstModelOperation xsi:type="tool:ChangeContext" browseExpression="aql:lineSemantic">
             <subModelOperations xsi:type="tool:If" conditionExpression="aql:arg0 = 'X'">
               <subModelOperations xsi:type="tool:CreateInstance" typeName="LogicalInterfaceRealization" referenceName="ownedInterfaceAllocations">
