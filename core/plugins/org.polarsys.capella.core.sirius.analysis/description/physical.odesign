@@ -383,7 +383,7 @@
               </initialOperation>
             </tools>
           </ownedTools>
-          <ownedTools xsi:type="tool_1:EdgeCreationDescription" documentation="Sets the target Function as the new container of the source Function" name="contained.in" label="%pa.pfbd.contained.in" precondition="aql:preSource.isValidDndDFBAbstractFunction(preTargetView)" forceRefresh="true" edgeMappings="//@ownedViewpoints[name='Physical%20Architecture']/@ownedRepresentations[name='Physical%20Function%20Breakdown']/@defaultLayer/@edgeMappings[name='PFB_PhysicalFunction_subFunctions']" iconPath="/org.polarsys.capella.core.sirius.analysis/description/images/containedIn.png">
+          <ownedTools xsi:type="tool_1:EdgeCreationDescription" documentation="%pa.pfbd.contained.in.desc" name="contained.in" label="%pa.pfbd.contained.in" precondition="aql:preSource.isValidDndDFBAbstractFunction(preTargetView)" forceRefresh="true" edgeMappings="//@ownedViewpoints[name='Physical%20Architecture']/@ownedRepresentations[name='Physical%20Function%20Breakdown']/@defaultLayer/@edgeMappings[name='PFB_PhysicalFunction_subFunctions']" iconPath="/org.polarsys.capella.core.sirius.analysis/description/images/containedIn.png">
             <sourceVariable name="source"/>
             <targetVariable name="target"/>
             <sourceViewVariable name="sourceView"/>
