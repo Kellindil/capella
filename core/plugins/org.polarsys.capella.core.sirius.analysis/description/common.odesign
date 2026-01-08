@@ -12261,7 +12261,7 @@
             </style>
           </conditionnalStyles>
         </nodeMappings>
-        <edgeMappings name="CCRI involvement" label="CCRI Involvement" deletionDescription="//@ownedViewpoints[name='Common']/@ownedRepresentations[name='Contextual%20Capability%20Realization%20Involvement']/@defaultLayer/@toolSections.0/@ownedTools[name='delete%20capella%20elements']" sourceMapping="//@ownedViewpoints[name='Common']/@ownedRepresentations[name='Contextual%20Capability%20Realization%20Involvement']/@defaultLayer/@nodeMappings[name='CCRI%20CapabilityRealization']" targetMapping="//@ownedViewpoints[name='Common']/@ownedRepresentations[name='Contextual%20Capability%20Realization%20Involvement']/@defaultLayer/@nodeMappings[name='CCRI%20Component']" targetFinderExpression="feature:involved" sourceFinderExpression="feature:involver" domainClass="CapabilityRealizationInvolvement" useDomainElement="true">
+        <edgeMappings name="CCRI involvement" label="%CCRI.involvement.label.0" deletionDescription="//@ownedViewpoints[name='Common']/@ownedRepresentations[name='Contextual%20Capability%20Realization%20Involvement']/@defaultLayer/@toolSections.0/@ownedTools[name='delete%20capella%20elements']" sourceMapping="//@ownedViewpoints[name='Common']/@ownedRepresentations[name='Contextual%20Capability%20Realization%20Involvement']/@defaultLayer/@nodeMappings[name='CCRI%20CapabilityRealization']" targetMapping="//@ownedViewpoints[name='Common']/@ownedRepresentations[name='Contextual%20Capability%20Realization%20Involvement']/@defaultLayer/@nodeMappings[name='CCRI%20Component']" targetFinderExpression="feature:involved" sourceFinderExpression="feature:involver" domainClass="CapabilityRealizationInvolvement" useDomainElement="true">
           <style>
             <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <centerLabelStyleDescription>
@@ -12440,7 +12440,7 @@
               <firstModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="aql:arg0"/>
             </initialOperation>
           </ownedTools>
-          <ownedTools xsi:type="tool:ContainerDropDescription" name="D&amp;D Constraint From Project Explorer" label="D&amp;D Constraint From Project Explorer" precondition="aql:element.oclIsKindOf(capellacore::Constraint) and element.canBeDropped(newViewContainer)" forceRefresh="true" mappings="//@ownedViewpoints[name='Common']/@ownedRepresentations[name='Class%20Diagram%20Blank']/@defaultLayer/@nodeMappings[name='DT_Contraint']" dragSource="PROJECT_EXPLORER">
+          <ownedTools xsi:type="tool:ContainerDropDescription" name="D&amp;D Constraint From Project Explorer" label="DandD.Constraint.From.Project.Explorer.label.0" precondition="aql:element.oclIsKindOf(capellacore::Constraint) and element.canBeDropped(newViewContainer)" forceRefresh="true" mappings="//@ownedViewpoints[name='Common']/@ownedRepresentations[name='Class%20Diagram%20Blank']/@defaultLayer/@nodeMappings[name='DT_Contraint']" dragSource="PROJECT_EXPLORER">
             <oldContainer name="oldSemanticContainer"/>
             <newContainer name="newSemanticContainer"/>
             <element name="element"/>
