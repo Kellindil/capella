@@ -3347,7 +3347,7 @@
             </initialOperation>
           </ownedTools>
         </toolSections>
-        <toolSections name="Behavior" label="Behaviour Components">
+        <toolSections name="Behavior" label="%Behavior.label.0">
           <ownedTools xsi:type="tool_1:ToolGroup" name="Behavior">
             <tools xsi:type="tool_1:ContainerCreationDescription" documentation="Creates a new Physlcal Component with a Kind BEHAVIOR and deployed on the target Physical Component." name="deploy.behavior.pc" label="%pa.pab.deploy.behavior.pc" precondition="aql:containerView.isValidCreationABDeployBehaviorPC()" containerMappings="//@ownedViewpoints[name='Physical%20Architecture']/@ownedRepresentations[name='Physical%20Architecture%20Blank']/@defaultLayer/@containerMappings[name='PAB_Deployment']" iconPath="/org.polarsys.capella.core.sirius.analysis/icons/full/obj16/PhysicalComponentBehavior.gif" extraMappings="//@ownedViewpoints[name='Physical%20Architecture']/@ownedRepresentations[name='Physical%20Architecture%20Blank']/@defaultLayer/@containerMappings[name='PAB_Deployment'] //@ownedViewpoints[name='Physical%20Architecture']/@ownedRepresentations[name='Physical%20Architecture%20Blank']/@defaultLayer/@containerMappings[name='PAB_PC']">
               <variable name="container">
