@@ -5355,7 +5355,7 @@
           <reusedTools xsi:type="tool_1:DeleteElementDescription" href="common.odesign#//@ownedViewpoints[name='Common']/@ownedRepresentations[name='Functional%20Chain%20Description']/@defaultLayer/@toolSections.0/@ownedTools[name='Delete%20FE%20Involvement']"/>
         </toolSections>
         <toolSections name="Sequencing">
-          <ownedTools xsi:type="tool_1:ToolGroup" documentation="Create a new Control Node." name="Create_ControlNode" label="Control Node">
+          <ownedTools xsi:type="tool_1:ToolGroup" documentation="Create a new Control Node." name="Create_ControlNode" label="%Create_ControlNode.label.0">
             <tools xsi:type="tool:ToolDescription" documentation="Create a new AND Control Node." name="and" label="%oa.opd.and" precondition="aql:container.oclIsKindOf(fa::FunctionalChain) or container.oclIsKindOf(fa::FunctionalChainReference) or container.oclIsKindOf(fa::SequenceLink) or container.oclIsKindOf(fa::SequenceLinkEnd)" forceRefresh="true" iconPath="/org.polarsys.capella.core.data.res.edit/icons/full/obj16/ControlNode_And.gif">
               <element name="element"/>
               <elementView name="elementView"/>
@@ -5513,7 +5513,7 @@
               </initialOperation>
             </tools>
           </ownedTools>
-          <ownedTools xsi:type="tool_1:ToolGroup" documentation="Create a new Control Node." name="Create_ControlNodeConstruct" label="Control Node Construct">
+          <ownedTools xsi:type="tool_1:ToolGroup" documentation="Create a new Control Node." name="Create_ControlNodeConstruct" label="%Create_ControlNodeConstruct.label.0">
             <tools xsi:type="tool:ToolDescription" documentation="Create a new AND Control Node." name="and.construct" label="%oa.opd.and.construct" precondition="aql:container.oclIsKindOf(fa::FunctionalChain) or container.oclIsKindOf(fa::FunctionalChainReference) or container.oclIsKindOf(fa::SequenceLink) or container.oclIsKindOf(fa::SequenceLinkEnd)" forceRefresh="true" iconPath="/org.polarsys.capella.core.data.res.edit/icons/full/obj16/ControlNode_And.gif">
               <element name="element"/>
               <elementView name="elementView"/>
