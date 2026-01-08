@@ -4546,7 +4546,7 @@
         </customization>
       </defaultLayer>
     </ownedRepresentations>
-    <ownedRepresentations xsi:type="description_1:CrossTableDescription" name="Physical Actor - Logical Actor" label="Physical Actors - Logical Actors" domainClass="PhysicalArchitecture">
+    <ownedRepresentations xsi:type="description_1:CrossTableDescription" name="Physical Actor - Logical Actor" label="%Physical.Actor.-.Logical.Actor.label.0" domainClass="PhysicalArchitecture">
       <ownedLineMappings name="PALA Physical Actor Line" domainClass="PhysicalComponent" semanticCandidatesExpression="aql:self.ownedPhysicalComponentPkg.getAllActors()">
         <delete name="No delete" precondition="false">
           <variables name="element" documentation="The currently edited element."/>
