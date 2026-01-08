@@ -5572,12 +5572,12 @@
             <containerViewVariable name="containerView"/>
             <representationNameVariable name="diagramName"/>
           </ownedTools>
-          <ownedTools xsi:type="tool:DiagramNavigationDescription" name="Existing Component Interfaces Scenario" label="%Existing Component Interfaces Scenario.label.0" navigationNameExpression="" diagramDescription="//@ownedViewpoints[name='Common']/@ownedRepresentations[name='Component%20Interfaces%20Scenario']">
+          <ownedTools xsi:type="tool:DiagramNavigationDescription" name="Existing Component Interfaces Scenario" label="%Existing.Component.Interfaces.Scenario.label.0" navigationNameExpression="" diagramDescription="//@ownedViewpoints[name='Common']/@ownedRepresentations[name='Component%20Interfaces%20Scenario']">
             <containerViewVariable name="containerView"/>
             <containerVariable name="container"/>
             <representationNameVariable name="diagramName"/>
           </ownedTools>
-          <ownedTools xsi:type="tool:DiagramCreationDescription" name="Component Exchanges Scenario" label="%Component Exchanges Scenario.label.0" precondition="aql:self.isInLib()" titleExpression="aql:self.name.addScenarioPrefix('[ES]')" browseExpression="aql:self.ownedScenarios->last()" diagramDescription="//@ownedViewpoints[name='Common']/@ownedRepresentations[name='Component%20Exchanges%20Scenario']">
+          <ownedTools xsi:type="tool:DiagramCreationDescription" name="Component Exchanges Scenario" label="%Component.Exchanges.Scenario.label.0" precondition="aql:self.isInLib()" titleExpression="aql:self.name.addScenarioPrefix('[ES]')" browseExpression="aql:self.ownedScenarios->last()" diagramDescription="//@ownedViewpoints[name='Common']/@ownedRepresentations[name='Component%20Exchanges%20Scenario']">
             <initialOperation>
               <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="aql:self">
                 <subModelOperations xsi:type="tool_1:CreateInstance" typeName="Scenario" referenceName="ownedScenarios">
@@ -5588,7 +5588,7 @@
             <containerViewVariable name="containerView"/>
             <representationNameVariable name="diagramName"/>
           </ownedTools>
-          <ownedTools xsi:type="tool:DiagramNavigationDescription" name="Existing Component Exchanges Scenario" label="%Existing Component Exchanges Scenario.label.0" navigationNameExpression="" diagramDescription="//@ownedViewpoints[name='Common']/@ownedRepresentations[name='Component%20Exchanges%20Scenario']">
+          <ownedTools xsi:type="tool:DiagramNavigationDescription" name="Existing Component Exchanges Scenario" label="%Existing.Component.Exchanges.Scenario.label.0" navigationNameExpression="" diagramDescription="//@ownedViewpoints[name='Common']/@ownedRepresentations[name='Component%20Exchanges%20Scenario']">
             <containerViewVariable name="containerView"/>
             <containerVariable name="container"/>
             <representationNameVariable name="diagramName"/>
