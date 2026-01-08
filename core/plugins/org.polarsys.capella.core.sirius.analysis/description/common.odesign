@@ -18210,7 +18210,7 @@
             <labelBorderStyle href="environment:/viewpoint#//@labelBorderStyles/@labelBorderStyleDescriptions.0"/>
           </style>
         </containerMappings>
-        <toolSections name="tools section" label="Scenarios Elements" reusedTools="//@ownedViewpoints[name='Common']/@ownedRepresentations[name='Component%20Interfaces%20Scenario']/@defaultLayer/@toolSections.0/@ownedTools[name='exchange.context']">
+        <toolSections name="tools section" label="%tools.section.2" reusedTools="//@ownedViewpoints[name='Common']/@ownedRepresentations[name='Component%20Interfaces%20Scenario']/@defaultLayer/@toolSections.0/@ownedTools[name='exchange.context']">
           <ownedTools xsi:type="tool:ToolGroup" name="FunctionCreation">
             <tools xsi:type="tool_2:InstanceRoleCreationTool" documentation=" Creates a new lifeline representing a System Function." name="system.function" label="%common.fs.system.function" nodeMappings="//@ownedViewpoints[name='Common']/@ownedRepresentations[name='Functional%20Scenario']/@defaultLayer/@nodeMappings[name='Instancerole%20Mapping%20FS']" iconPath="/org.polarsys.capella.core.sirius.analysis/icons/full/obj16/SystemFunction.gif">
               <filters precondition="aql:self.target.eContainerOrSelf(ctx::SystemAnalysis)->size() = 0" elementsToListen="aql:self.target.eContainerOrSelf(interaction::Scenario)">
@@ -19474,7 +19474,7 @@
           </ownedTools>
         </toolSections>
         <toolSections name="Sequencing">
-          <ownedTools xsi:type="tool:ToolGroup" documentation="Create a new Control Node." name="Create_ControlNode" label="Control Node">
+          <ownedTools xsi:type="tool:ToolGroup" documentation="Create a new Control Node." name="Create_ControlNode" label="%Create_ControlNode.label.0">
             <tools xsi:type="tool_1:ToolDescription" documentation="Create a new AND Control Node." name="and" label="%common.fcd.and" precondition="aql:container.oclIsKindOf(fa::FunctionalChain) or container.oclIsKindOf(fa::FunctionalChainReference) or container.oclIsKindOf(fa::SequenceLink) or container.oclIsKindOf(fa::SequenceLinkEnd)" forceRefresh="true" iconPath="/org.polarsys.capella.core.data.res.edit/icons/full/obj16/ControlNode_And.gif">
               <element name="element"/>
               <elementView name="elementView"/>
@@ -19626,7 +19626,7 @@
               </initialOperation>
             </tools>
           </ownedTools>
-          <ownedTools xsi:type="tool:ToolGroup" documentation="Create a new Control Node." name="Create_ControlNodeConstruct" label="Control Node Construct">
+          <ownedTools xsi:type="tool:ToolGroup" documentation="Create a new Control Node." name="Create_ControlNodeConstruct" label="%Create_ControlNodeConstruct.label.0">
             <tools xsi:type="tool_1:ToolDescription" documentation="Create a new AND Control Node." name="and.construct" label="%common.fcd.and.construct" precondition="aql:container.oclIsKindOf(fa::FunctionalChain) or container.oclIsKindOf(fa::FunctionalChainReference) or container.oclIsKindOf(fa::SequenceLink) or container.oclIsKindOf(fa::SequenceLinkEnd)" forceRefresh="true" iconPath="/org.polarsys.capella.core.data.res.edit/icons/full/obj16/ControlNode_And.gif">
               <element name="element"/>
               <elementView name="elementView"/>
@@ -20096,7 +20096,7 @@
         </toolSections>
       </defaultLayer>
     </ownedRepresentations>
-    <ownedRepresentations xsi:type="description_3:CrossTableDescription" name="State And Mode - Matrix" label="State Machine and Capability Function Matrix" preconditionExpression="aql:self->filter(capellacore::ModellingBlock)->size() > 0 or self->filter(capellacore::ModellingArchitecture)->size() > 0" domainClass="capellacore.Namespace">
+    <ownedRepresentations xsi:type="description_3:CrossTableDescription" name="State And Mode - Matrix" label="%State.And.Mode.Matrix" preconditionExpression="aql:self->filter(capellacore::ModellingBlock)->size() > 0 or self->filter(capellacore::ModellingArchitecture)->size() > 0" domainClass="capellacore.Namespace">
       <ownedLineMappings name="SAM Components" domainClass="Component" semanticCandidatesExpression="aql:self.getFirstComponents()" headerLabelExpression="feature:name">
         <ownedSubLines name="SAM Sub Components" reusedSubLines="//@ownedViewpoints[name='Common']/@ownedRepresentations[name='State%20And%20Mode%20-%20Matrix']/@ownedLineMappings[name='SAM%20Components']/@ownedSubLines[name='SAM%20State%20Machine'] //@ownedViewpoints[name='Common']/@ownedRepresentations[name='State%20And%20Mode%20-%20Matrix']/@ownedLineMappings[name='SAM%20Components']/@ownedSubLines[name='SAM%20Sub%20Components']" reusedInMappings="//@ownedViewpoints[name='Common']/@ownedRepresentations[name='State%20And%20Mode%20-%20Matrix']/@ownedLineMappings[name='SAM%20Components']/@ownedSubLines[name='SAM%20Sub%20Components']" domainClass="Component" semanticCandidatesExpression="aql:self.getSubComponentsWithStateMachine()" headerLabelExpression="feature:name">
           <delete name="No delete" precondition="false">
