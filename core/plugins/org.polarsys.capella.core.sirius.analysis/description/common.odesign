@@ -10201,12 +10201,12 @@
             <elementView name="elementView"/>
             <initialOperation>
               <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="aql:elementView">
-                <subModelOperations xsi:type="tool_1:ExternalJavaAction" name="setVariable" label="setVariable $scope" id="org.polarsys.capella.core.sirius.analysis.actions.extensions.SetVariable">
+                <subModelOperations xsi:type="tool_1:ExternalJavaAction" name="setVariable" label="%setVariable.label.4" id="org.polarsys.capella.core.sirius.analysis.actions.extensions.SetVariable">
                   <parameters name="context" value="var:elementView"/>
                   <parameters name="variable" value="scope"/>
                   <parameters name="value" value="service:getIDInsertRemoveRelationshipsScope"/>
                 </subModelOperations>
-                <subModelOperations xsi:type="tool_1:ExternalJavaAction" name="setVariable" label="setVariable $initialSelection" id="org.polarsys.capella.core.sirius.analysis.actions.extensions.SetVariable">
+                <subModelOperations xsi:type="tool_1:ExternalJavaAction" name="setVariable" label="%setVariable.label.5" id="org.polarsys.capella.core.sirius.analysis.actions.extensions.SetVariable">
                   <parameters name="context" value="var:elementView"/>
                   <parameters name="variable" value="initialSelection"/>
                   <parameters name="value" value="service:getIDInsertRemoveRelationshipsInitialSelection(scope)"/>
