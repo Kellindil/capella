@@ -719,7 +719,7 @@
             <containerViewVariable name="containerView"/>
             <representationNameVariable name="diagramName"/>
           </ownedTools>
-          <ownedTools xsi:type="tool:DiagramCreationDescription" name="SM_CreateDiag_ModesAndStates" label="Modes and States [DEPRECATED]" precondition="aql:self.isInLib()" titleExpression="aql:'[M&amp;S] ' + self.name" browseExpression="aql:self->filter(capellacommon::State).ownedRegions->first()" diagramDescription="//@ownedViewpoints[name='Common']/@ownedRepresentations[name='Modes%20%26%20States']">
+          <ownedTools xsi:type="tool:DiagramCreationDescription" name="SM_CreateDiag_ModesAndStates" label="%SM_CreateDiag_ModesAndStates.label.0" precondition="aql:self.isInLib()" titleExpression="aql:'[M&amp;S] ' + self.name" browseExpression="aql:self->filter(capellacommon::State).ownedRegions->first()" diagramDescription="//@ownedViewpoints[name='Common']/@ownedRepresentations[name='Modes%20%26%20States']">
             <initialOperation>
               <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="aql:containerView.target">
                 <subModelOperations xsi:type="tool_1:If" conditionExpression="aql:self.ownedRegions->size() = 0">
@@ -1527,7 +1527,7 @@
               </firstModelOperations>
             </initialOperation>
           </ownedTools>
-          <ownedTools xsi:type="tool:DiagramCreationDescription" name="SM_CreateDiag_ModeStateMachine" label="Mode State Machine Diagram" precondition="aql:self.isInLib()" titleExpression="aql:'[MSM] ' + self.name" browseExpression="aql:self->filter(capellacommon::State).ownedRegions->first()" diagramDescription="//@ownedViewpoints[name='Common']/@ownedRepresentations[name='Mode%20State%20Machine']">
+          <ownedTools xsi:type="tool:DiagramCreationDescription" name="SM_CreateDiag_ModeStateMachine" label="%SM_CreateDiag_ModeStateMachine.label.1" precondition="aql:self.isInLib()" titleExpression="aql:'[MSM] ' + self.name" browseExpression="aql:self->filter(capellacommon::State).ownedRegions->first()" diagramDescription="//@ownedViewpoints[name='Common']/@ownedRepresentations[name='Mode%20State%20Machine']">
             <initialOperation>
               <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="aql:containerView.target">
                 <subModelOperations xsi:type="tool_1:If" conditionExpression="aql:self.ownedRegions->size() = 0">
@@ -3631,7 +3631,7 @@
               </initialOperation>
             </tools>
           </ownedTools>
-          <ownedTools xsi:type="tool:ToolGroup" name="DataValue" label="DataValue">
+          <ownedTools xsi:type="tool:ToolGroup" name="DataValue" label="%DataValue.label.0">
             <tools xsi:type="tool:NodeCreationDescription" documentation="Creates a new Numeric Reference." name="numeric.reference" label="%common.cdb.numeric.reference" nodeMappings="//@ownedViewpoints[name='Common']/@ownedRepresentations[name='Class%20Diagram%20Blank']/@defaultLayer/@nodeMappings[name='DT_DataValue'] //@ownedViewpoints[name='Common']/@ownedRepresentations[name='Class%20Diagram%20Blank']/@defaultLayer/@containerMappings[name='DT_Class']/@subNodeMappings[name='DT_SubDataValue'] //@ownedViewpoints[name='Common']/@ownedRepresentations[name='Class%20Diagram%20Blank']/@defaultLayer/@containerMappings[name='DT_DataType']/@subNodeMappings[name='Contents'] //@ownedViewpoints[name='Common']/@ownedRepresentations[name='Class%20Diagram%20Blank']/@defaultLayer/@containerMappings[name='DT_BooleanType']/@subNodeMappings[name='BooleanTypeContents'] //@ownedViewpoints[name='Common']/@ownedRepresentations[name='Class%20Diagram%20Blank']/@defaultLayer/@containerMappings[name='DT_Enumeration']/@subNodeMappings[name='EnumerationContents']" iconPath="/org.polarsys.capella.core.sirius.analysis/icons/full/obj16/NumericReference.gif">
               <variable name="container"/>
               <viewVariable name="containerView"/>
@@ -5539,7 +5539,7 @@
             <representationNameVariable name="diagramName"/>
             <diagramDescription href="oa.odesign#//@ownedViewpoints[name='Operational%20Analysis']/@ownedRepresentations[name='Operational%20Activity%20Interaction%20Blank']"/>
           </ownedTools>
-          <ownedTools xsi:type="tool:DiagramCreationDescription" name="Operational Entity Blank" label="Operational Architecture Blank" precondition="aql:self.isInLib()" titleExpression="aql:'[OAB] ' + self.name">
+          <ownedTools xsi:type="tool:DiagramCreationDescription" name="Operational Entity Blank" label="%Operational Entity Blank.label.0" precondition="aql:self.isInLib()" titleExpression="aql:'[OAB] ' + self.name">
             <initialOperation/>
             <containerViewVariable name="containerView"/>
             <representationNameVariable name="diagramName"/>
