@@ -5588,7 +5588,7 @@
             <containerViewVariable name="containerView"/>
             <representationNameVariable name="diagramName"/>
           </ownedTools>
-          <ownedTools xsi:type="tool:DiagramNavigationDescription" name="Existing Component Exchanges Scenario" label="Existing Exchange Scenario" navigationNameExpression="" diagramDescription="//@ownedViewpoints[name='Common']/@ownedRepresentations[name='Component%20Exchanges%20Scenario']">
+          <ownedTools xsi:type="tool:DiagramNavigationDescription" name="Existing Component Exchanges Scenario" label="%Existing Component Exchanges Scenario.label.0" navigationNameExpression="" diagramDescription="//@ownedViewpoints[name='Common']/@ownedRepresentations[name='Component%20Exchanges%20Scenario']">
             <containerViewVariable name="containerView"/>
             <containerVariable name="container"/>
             <representationNameVariable name="diagramName"/>
@@ -5624,28 +5624,28 @@
             <containerVariable name="container"/>
             <representationNameVariable name="diagramName"/>
           </ownedTools>
-          <ownedTools xsi:type="tool:DiagramNavigationDescription" name="Existing Interface Scenario Use" label="Existing Interface Scenario Use" browseExpression="feature:referencedScenario" navigationNameExpression="var:diagramName" diagramDescription="//@ownedViewpoints[name='Common']/@ownedRepresentations[name='Component%20Interfaces%20Scenario']">
+          <ownedTools xsi:type="tool:DiagramNavigationDescription" name="Existing Interface Scenario Use" label="%Existing Interface Scenario Use.label.0" browseExpression="feature:referencedScenario" navigationNameExpression="var:diagramName" diagramDescription="//@ownedViewpoints[name='Common']/@ownedRepresentations[name='Component%20Interfaces%20Scenario']">
             <containerViewVariable name="containerView"/>
             <containerVariable name="container"/>
             <representationNameVariable name="diagramName"/>
           </ownedTools>
-          <ownedTools xsi:type="tool:DiagramNavigationDescription" name="Existing Exchange Scenario Use" label="Existing Exchange Scenario Use" browseExpression="feature:referencedScenario" navigationNameExpression="var:diagramName" diagramDescription="//@ownedViewpoints[name='Common']/@ownedRepresentations[name='Component%20Exchanges%20Scenario']">
+          <ownedTools xsi:type="tool:DiagramNavigationDescription" name="Existing Exchange Scenario Use" label="%Existing Exchange Scenario Use.label.0" browseExpression="feature:referencedScenario" navigationNameExpression="var:diagramName" diagramDescription="//@ownedViewpoints[name='Common']/@ownedRepresentations[name='Component%20Exchanges%20Scenario']">
             <containerViewVariable name="containerView"/>
             <containerVariable name="container"/>
             <representationNameVariable name="diagramName"/>
           </ownedTools>
-          <ownedTools xsi:type="tool:DiagramNavigationDescription" name="Existing Functional Scenario Use" label="Existing Functional Scenario Use" browseExpression="feature:referencedScenario" navigationNameExpression="var:diagramName" diagramDescription="//@ownedViewpoints[name='Common']/@ownedRepresentations[name='Functional%20Scenario']">
+          <ownedTools xsi:type="tool:DiagramNavigationDescription" name="Existing Functional Scenario Use" label="%Existing Functional Scenario Use.label.0" browseExpression="feature:referencedScenario" navigationNameExpression="var:diagramName" diagramDescription="//@ownedViewpoints[name='Common']/@ownedRepresentations[name='Functional%20Scenario']">
             <containerViewVariable name="containerView"/>
             <containerVariable name="container"/>
             <representationNameVariable name="diagramName"/>
           </ownedTools>
-          <ownedTools xsi:type="tool:DiagramNavigationDescription" name="Existing Operational Entity Scenario Use" label="Existing Operational Entity Scenario Use" browseExpression="feature:referencedScenario" navigationNameExpression="var:diagramName">
+          <ownedTools xsi:type="tool:DiagramNavigationDescription" name="Existing Operational Entity Scenario Use" label="%Existing Operational Entity Scenario Use.label.0" browseExpression="feature:referencedScenario" navigationNameExpression="var:diagramName">
             <containerViewVariable name="containerView"/>
             <containerVariable name="container"/>
             <representationNameVariable name="diagramName"/>
             <diagramDescription href="oa.odesign#//@ownedViewpoints[name='Operational%20Analysis']/@ownedRepresentations[name='Operational%20Interaction%20Scenario']"/>
           </ownedTools>
-          <ownedTools xsi:type="tool:DiagramNavigationDescription" name="Existing Operational Activity Scenario Use" label="Existing Operational Activity Scenario Use" browseExpression="feature:referencedScenario" navigationNameExpression="var:diagramName">
+          <ownedTools xsi:type="tool:DiagramNavigationDescription" name="Existing Operational Activity Scenario Use" label="%Existing Operational Activity Scenario Use.label.0" browseExpression="feature:referencedScenario" navigationNameExpression="var:diagramName">
             <containerViewVariable name="containerView"/>
             <containerVariable name="container"/>
             <representationNameVariable name="diagramName"/>
