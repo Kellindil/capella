@@ -706,7 +706,7 @@
               </firstModelOperations>
             </initialOperation>
           </ownedTools>
-          <ownedTools xsi:type="tool:DiagramCreationDescription" name="SM_CreateDiag_ModeStateMachine" label="Mode State Machine Diagram" precondition="aql:self.isInLib()" titleExpression="aql:'[MSM] ' + self.name" browseExpression="aql:self->filter(capellacommon::State).ownedRegions->first()" diagramDescription="//@ownedViewpoints[name='Common']/@ownedRepresentations[name='Mode%20State%20Machine']">
+          <ownedTools xsi:type="tool:DiagramCreationDescription" name="SM_CreateDiag_ModeStateMachine" label="%SM_CreateDiag_ModeStateMachine.label.0" precondition="aql:self.isInLib()" titleExpression="aql:'[MSM] ' + self.name" browseExpression="aql:self->filter(capellacommon::State).ownedRegions->first()" diagramDescription="//@ownedViewpoints[name='Common']/@ownedRepresentations[name='Mode%20State%20Machine']">
             <initialOperation>
               <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="aql:containerView.target">
                 <subModelOperations xsi:type="tool_1:If" conditionExpression="aql:self.ownedRegions->size() = 0">
