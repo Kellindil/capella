@@ -5551,7 +5551,7 @@
             <representationNameVariable name="diagramName"/>
             <diagramDescription href="oa.odesign#//@ownedViewpoints[name='Operational%20Analysis']/@ownedRepresentations[name='Operational%20Role%20Blank']"/>
           </ownedTools>
-          <ownedTools xsi:type="tool:DiagramCreationDescription" name="Modes &amp;&amp; States" label="Modes and states" precondition="aql:self.isInLib()" titleExpression="aql:'[M&amp;S] ' + self.name" diagramDescription="//@ownedViewpoints[name='Common']/@ownedRepresentations[name='Modes%20%26%20States']">
+          <ownedTools xsi:type="tool:DiagramCreationDescription" name="Modes &amp;&amp; States" label="%Modes.and.States.label.0" precondition="aql:self.isInLib()" titleExpression="aql:'[M&amp;S] ' + self.name" diagramDescription="//@ownedViewpoints[name='Common']/@ownedRepresentations[name='Modes%20%26%20States']">
             <initialOperation/>
             <containerViewVariable name="containerView"/>
             <representationNameVariable name="diagramName"/>
@@ -5561,7 +5561,7 @@
             <containerViewVariable name="containerView"/>
             <representationNameVariable name="diagramName"/>
           </ownedTools>
-          <ownedTools xsi:type="tool:DiagramCreationDescription" documentation="toto&#xD;&#xA;" name="Component Interfaces Scenario" label="Interface Scenario" precondition="aql:self.isInLib()" titleExpression="aql:self.name.addScenarioPrefix('[IS]')" browseExpression="aql:self.ownedScenarios->last()" diagramDescription="//@ownedViewpoints[name='Common']/@ownedRepresentations[name='Component%20Interfaces%20Scenario']">
+          <ownedTools xsi:type="tool:DiagramCreationDescription" documentation="toto&#xD;&#xA;" name="Component Interfaces Scenario" label="%Component Interfaces Scenario.label.0" precondition="aql:self.isInLib()" titleExpression="aql:self.name.addScenarioPrefix('[IS]')" browseExpression="aql:self.ownedScenarios->last()" diagramDescription="//@ownedViewpoints[name='Common']/@ownedRepresentations[name='Component%20Interfaces%20Scenario']">
             <initialOperation>
               <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="aql:self">
                 <subModelOperations xsi:type="tool_1:CreateInstance" typeName="Scenario" referenceName="ownedScenarios">
@@ -5572,12 +5572,12 @@
             <containerViewVariable name="containerView"/>
             <representationNameVariable name="diagramName"/>
           </ownedTools>
-          <ownedTools xsi:type="tool:DiagramNavigationDescription" name="Existing Component Interfaces Scenario" label="Existing Interface Scenario" navigationNameExpression="" diagramDescription="//@ownedViewpoints[name='Common']/@ownedRepresentations[name='Component%20Interfaces%20Scenario']">
+          <ownedTools xsi:type="tool:DiagramNavigationDescription" name="Existing Component Interfaces Scenario" label="%Existing Component Interfaces Scenario.label.0" navigationNameExpression="" diagramDescription="//@ownedViewpoints[name='Common']/@ownedRepresentations[name='Component%20Interfaces%20Scenario']">
             <containerViewVariable name="containerView"/>
             <containerVariable name="container"/>
             <representationNameVariable name="diagramName"/>
           </ownedTools>
-          <ownedTools xsi:type="tool:DiagramCreationDescription" name="Component Exchanges Scenario" label="Exchange Scenario" precondition="aql:self.isInLib()" titleExpression="aql:self.name.addScenarioPrefix('[ES]')" browseExpression="aql:self.ownedScenarios->last()" diagramDescription="//@ownedViewpoints[name='Common']/@ownedRepresentations[name='Component%20Exchanges%20Scenario']">
+          <ownedTools xsi:type="tool:DiagramCreationDescription" name="Component Exchanges Scenario" label="%Component Exchanges Scenario.label.0" precondition="aql:self.isInLib()" titleExpression="aql:self.name.addScenarioPrefix('[ES]')" browseExpression="aql:self.ownedScenarios->last()" diagramDescription="//@ownedViewpoints[name='Common']/@ownedRepresentations[name='Component%20Exchanges%20Scenario']">
             <initialOperation>
               <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="aql:self">
                 <subModelOperations xsi:type="tool_1:CreateInstance" typeName="Scenario" referenceName="ownedScenarios">
